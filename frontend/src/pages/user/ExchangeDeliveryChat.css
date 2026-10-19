@@ -1,0 +1,453 @@
+/* =====================================================
+   ExchangeDeliveryChat.css
+===================================================== */
+
+.exchange-chat-page{
+    min-height:100vh;
+    background:#f5f7fb;
+    padding:40px 20px;
+}
+
+.exchange-chat-container{
+    max-width:900px;
+    margin:auto;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    display:flex;
+    flex-direction:column;
+}
+
+.exchange-chat-header{
+    background:#1e88e5;
+    color:#fff;
+    padding:25px;
+}
+
+.exchange-chat-header h2{
+    margin:0;
+    font-size:24px;
+    font-weight:700;
+}
+
+.exchange-chat-header p{
+    margin-top:8px;
+    opacity:.9;
+    font-size:15px;
+}
+
+/* =========================
+   Delivery Buttons
+========================= */
+
+.delivery-buttons{
+    display:flex;
+    gap:15px;
+    padding:20px;
+    background:#f8f9fc;
+    border-bottom:1px solid #ececec;
+}
+
+.delivery-buttons button{
+    flex:1;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.delivery-buttons button:hover{
+    transform:translateY(-2px);
+}
+
+/* =========================
+   Chat Closed
+========================= */
+
+.chat-closed-box{
+    margin:20px;
+    padding:18px;
+    border-radius:10px;
+    background:#e8f5e9;
+    color:#2e7d32;
+    font-weight:600;
+    text-align:center;
+}
+
+.chat-closed-footer{
+    text-align:center;
+    padding:25px;
+    border-top:1px solid #eee;
+}
+
+.chat-closed-footer p{
+    margin-bottom:20px;
+    color:#555;
+}
+
+/* =========================
+   Messages
+========================= */
+
+.exchange-chat-messages{
+    flex:1;
+    height:550px;
+    overflow-y:auto;
+    padding:25px;
+    background:#f5f7fb;
+}
+
+.chat-message{
+    display:flex;
+    margin-bottom:18px;
+    align-items:flex-end;
+}
+
+.chat-message.mine{
+    flex-direction:row-reverse;
+}
+
+.chat-avatar{
+    width:42px;
+    height:42px;
+    margin:0 10px;
+    flex-shrink:0;
+}
+
+.chat-avatar img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.chat-content{
+    max-width:70%;
+}
+
+.chat-user{
+    font-size:13px;
+    color:#777;
+    margin-bottom:5px;
+}
+
+.chat-message.mine .chat-user{
+    text-align:right;
+}
+
+.chat-text{
+    background:#ffffff;
+    padding:12px 15px;
+    border-radius:16px;
+    line-height:1.5;
+    box-shadow:0 2px 6px rgba(0,0,0,.08);
+    word-break:break-word;
+}
+
+.chat-message.mine .chat-text{
+    background:#1e88e5;
+    color:#fff;
+}
+
+.chat-image{
+    margin-top:10px;
+    width:250px;
+    max-width:100%;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.chat-image:hover{
+    transform:scale(1.02);
+}
+
+.chat-date{
+    margin-top:5px;
+    font-size:11px;
+    color:#999;
+}
+
+.chat-message.mine .chat-date{
+    text-align:right;
+}
+
+/* =========================
+   Composer
+========================= */
+
+.exchange-chat-input{
+    padding:20px;
+    border-top:1px solid #eee;
+    background:#fff;
+}
+
+.exchange-chat-input textarea{
+    width:100%;
+    min-height:100px;
+    resize:none;
+    padding:15px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    outline:none;
+    font-size:15px;
+    font-family:inherit;
+    transition:.25s;
+}
+
+.exchange-chat-input textarea:focus{
+    border-color:#1e88e5;
+}
+
+.chat-actions{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:15px;
+    flex-wrap:wrap;
+}
+
+.chat-actions input[type=file]{
+    flex:1;
+}
+
+.selected-image-name{
+    font-size:13px;
+    color:#555;
+}
+
+/* =========================
+   Loading
+========================= */
+
+.exchange-chat-loading{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70vh;
+    font-size:22px;
+    font-weight:600;
+}
+
+/* =========================
+   Scrollbar
+========================= */
+
+.exchange-chat-messages::-webkit-scrollbar{
+    width:8px;
+}
+
+.exchange-chat-messages::-webkit-scrollbar-thumb{
+    background:#c9d4df;
+    border-radius:20px;
+}
+
+.exchange-chat-messages::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+/* =========================
+   Delivery cards
+========================= */
+
+.delivery-address-card{
+    padding:18px 25px;
+    background:#fff;
+    border-bottom:1px solid #eee;
+    display:flex;
+    gap:16px;
+    align-items:flex-start;
+}
+
+.address-box{
+    flex:1;
+    border:1px solid #eee;
+    border-radius:14px;
+    padding:14px;
+    background:#fcfcff;
+}
+
+.address-box h3{
+    margin:0 0 10px 0;
+    font-size:16px;
+}
+
+.address-box p{
+    margin:4px 0;
+    font-size:14px;
+    color:#444;
+}
+
+.delivery-arrow{
+    font-size:22px;
+    color:#1e88e5;
+    padding-top:30px;
+}
+
+.delivery-price-card{
+    padding:16px 25px;
+    background:#f8f9fc;
+    border-bottom:1px solid #eee;
+}
+
+/* =========================
+   Payment Card
+========================= */
+
+.delivery-payment-card{
+    padding:18px 25px;
+    background:linear-gradient(180deg,#fff 0%, #f8fafc 100%);
+    border-bottom:1px solid #eee;
+}
+
+.delivery-payment-card h3{
+    margin:0 0 8px 0;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:18px;
+}
+
+.payment-your-part{
+    margin:0 0 14px 0;
+    color:#1f2937;
+    font-weight:600;
+    font-size:14px;
+}
+
+.payment-method-section{
+    margin:10px 0 12px 0;
+}
+
+.payment-method-title{
+    margin:0 0 10px 0;
+    color:#374151;
+    font-weight:700;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.02em;
+}
+
+.payment-method-options{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.payment-option{
+    flex:1;
+    min-width:220px;
+    border:1px solid #e5e7eb;
+    background:#fff;
+    border-radius:14px;
+    padding:12px 12px;
+    cursor:pointer;
+    transition:transform .15s ease, border-color .15s ease, box-shadow .15s ease;
+    display:flex;
+    gap:10px;
+    align-items:center;
+}
+
+.payment-option input[type="radio"]{
+    width:18px;
+    height:18px;
+    accent-color:#1e88e5;
+}
+
+.payment-option span{
+    font-weight:700;
+    color:#111827;
+    font-size:14px;
+}
+
+.payment-option:hover{
+    transform:translateY(-1px);
+    box-shadow:0 10px 22px rgba(0,0,0,.06);
+}
+
+.payment-option.is-disabled{
+    cursor:not-allowed;
+    opacity:.75;
+}
+
+.payment-status{
+    margin:14px 0 14px 0;
+    padding:12px 14px;
+    border-radius:14px;
+    background:#ffffff;
+    border:1px solid #eef2f7;
+}
+
+.payment-status-title{
+    margin:0;
+    font-weight:800;
+    color:#6b7280;
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.02em;
+}
+
+.payment-status-value{
+    margin:6px 0 0 0;
+    font-weight:800;
+    color:#111827;
+}
+
+/* Make disabled confirm button look consistent */
+.delivery-payment-card .btn[disabled]{
+    opacity:.6;
+    cursor:not-allowed;
+}
+
+
+.delivery-price-card h3{
+    margin:0 0 10px 0;
+}
+
+.delivery-price-card p{
+    margin:6px 0;
+    font-size:14px;
+    color:#444;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:768px){
+
+    .exchange-chat-page{
+        padding:10px;
+    }
+
+    .exchange-chat-container{
+        border-radius:10px;
+    }
+
+    .exchange-chat-header{
+        padding:18px;
+    }
+
+    .delivery-buttons{
+        flex-direction:column;
+    }
+
+    .chat-content{
+        max-width:85%;
+    }
+
+    .chat-image{
+        width:180px;
+    }
+
+    .chat-actions{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .chat-actions button{
+        width:100%;
+    }
+
+}

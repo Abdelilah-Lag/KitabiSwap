@@ -1,0 +1,671 @@
+/* ==========================================================
+   TermsOfService.css
+   PARTIE 1
+   HERO + INTRO + SUMMARY
+========================================================== */
+
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+.terms-section-main{
+
+    background:#f8fafc;
+
+    padding:70px 20px 90px;
+
+}
+
+.terms-container{
+
+    width:min(1150px,92%);
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.terms-hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:90px 20px;
+
+    background:linear-gradient(
+        135deg,
+        #2563eb,
+        #1d4ed8
+    );
+
+    color:#ffffff;
+
+}
+
+.terms-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    right:-120px;
+
+    top:-180px;
+
+}
+
+.terms-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    left:-80px;
+
+    bottom:-120px;
+
+}
+
+.terms-hero-container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.terms-tag{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 20px;
+
+    border-radius:999px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+    font-weight:600;
+
+    font-size:.9rem;
+
+    margin-bottom:22px;
+
+}
+
+.terms-hero h1{
+
+    font-size:3rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.terms-hero p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+    font-size:1.05rem;
+
+    opacity:.95;
+
+}
+
+.terms-update{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:12px 22px;
+
+    background:rgba(255,255,255,.12);
+
+    border-radius:999px;
+
+    font-size:.95rem;
+
+    backdrop-filter:blur(10px);
+
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.terms-card{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    margin-bottom:30px;
+
+    border:1px solid #e5e7eb;
+
+    box-shadow:
+        0 12px 30px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.terms-card:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 20px 45px rgba(37,99,235,.12);
+
+}
+
+.terms-card h2{
+
+    color:#1e3a8a;
+
+    font-size:1.7rem;
+
+    margin-bottom:20px;
+
+}
+
+.terms-card p{
+
+    color:#4b5563;
+
+    line-height:1.9;
+
+    font-size:1rem;
+
+}
+
+/* ==========================================================
+   SUMMARY
+========================================================== */
+
+.terms-summary{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    margin-bottom:35px;
+
+    border:1px solid #e5e7eb;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.terms-summary h3{
+
+    font-size:1.4rem;
+
+    color:#1e3a8a;
+
+    margin-bottom:20px;
+
+}
+
+.terms-summary ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(auto-fit,minmax(250px,1fr));
+
+    gap:15px;
+
+}
+
+.terms-summary li{
+
+    margin:0;
+
+}
+
+.terms-summary a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    background:#eff6ff;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.terms-summary a:hover{
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    transform:translateX(5px);
+
+}
+/* ==========================================================
+   HIGHLIGHT
+========================================================== */
+
+.terms-highlight{
+
+    margin-top:25px;
+
+    padding:20px 24px;
+
+    border-left:5px solid #2563eb;
+
+    background:#eff6ff;
+
+    border-radius:12px;
+
+    color:#1e40af;
+
+    line-height:1.8;
+
+    font-weight:500;
+
+}
+
+/* ==========================================================
+   LIST
+========================================================== */
+
+.terms-list{
+
+    margin-top:20px;
+
+    padding-left:25px;
+
+}
+
+.terms-list li{
+
+    margin-bottom:14px;
+
+    color:#4b5563;
+
+    line-height:1.8;
+
+}
+
+.terms-list li::marker{
+
+    color:#2563eb;
+
+}
+
+/* ==========================================================
+   NOTE
+========================================================== */
+
+.terms-note{
+
+    margin-top:22px;
+
+    padding:18px 22px;
+
+    background:#ecfeff;
+
+    border-left:5px solid #06b6d4;
+
+    border-radius:12px;
+
+    color:#155e75;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   WARNING
+========================================================== */
+
+.terms-warning{
+
+    margin-top:22px;
+
+    padding:20px 22px;
+
+    background:#fff7ed;
+
+    border-left:5px solid #f97316;
+
+    border-radius:12px;
+
+    color:#9a3412;
+
+    line-height:1.8;
+
+    font-weight:500;
+
+}
+
+/* ==========================================================
+   IMPORTANT
+========================================================== */
+
+.terms-important{
+
+    margin:45px 0;
+
+    padding:35px;
+
+    border-radius:22px;
+
+    background:linear-gradient(
+        135deg,
+        #1d4ed8,
+        #2563eb
+    );
+
+    color:#ffffff;
+
+    box-shadow:
+        0 20px 45px rgba(37,99,235,.25);
+
+}
+
+.terms-important h3{
+
+    font-size:1.6rem;
+
+    margin-bottom:18px;
+
+}
+
+.terms-important p{
+
+    line-height:1.9;
+
+    opacity:.95;
+
+}
+
+/* ==========================================================
+   CONTACT CARD
+========================================================== */
+
+.terms-contact-card{
+
+    text-align:center;
+
+    padding:60px 40px;
+
+    border-radius:24px;
+
+    background:#ffffff;
+
+    border:1px solid #e5e7eb;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.06);
+
+}
+
+.terms-contact-card h2{
+
+    color:#1e3a8a;
+
+    font-size:2rem;
+
+    margin-bottom:20px;
+
+}
+
+.terms-contact-card p{
+
+    max-width:650px;
+
+    margin:0 auto 35px;
+
+    color:#6b7280;
+
+    line-height:1.8;
+
+}
+
+.terms-contact-btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-decoration:none;
+
+    padding:16px 40px;
+
+    border-radius:999px;
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    transition:.3s;
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,.25);
+
+}
+
+.terms-contact-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 22px 45px rgba(37,99,235,.35);
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .terms-hero{
+
+        padding:75px 20px;
+
+    }
+
+    .terms-hero h1{
+
+        font-size:2.4rem;
+
+    }
+
+    .terms-card{
+
+        padding:28px;
+
+    }
+
+    .terms-contact-card{
+
+        padding:45px 30px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .terms-hero{
+
+        padding:65px 18px;
+
+    }
+
+    .terms-hero h1{
+
+        font-size:2rem;
+
+    }
+
+    .terms-hero p{
+
+        font-size:.96rem;
+
+    }
+
+    .terms-summary{
+
+        padding:25px;
+
+    }
+
+    .terms-summary ul{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .terms-card{
+
+        padding:24px;
+
+    }
+
+    .terms-card h2{
+
+        font-size:1.4rem;
+
+    }
+
+    .terms-important{
+
+        padding:28px;
+
+    }
+
+    .terms-important h3{
+
+        font-size:1.4rem;
+
+    }
+
+    .terms-contact-card{
+
+        padding:40px 25px;
+
+    }
+
+    .terms-contact-card h2{
+
+        font-size:1.6rem;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .terms-hero h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .terms-tag{
+
+        font-size:.8rem;
+
+        padding:7px 16px;
+
+    }
+
+    .terms-card{
+
+        padding:20px;
+
+    }
+
+    .terms-summary{
+
+        padding:20px;
+
+    }
+
+    .terms-contact-btn{
+
+        width:100%;
+
+        padding:15px;
+
+    }
+
+    .terms-contact-card{
+
+        border-radius:18px;
+
+    }
+
+}

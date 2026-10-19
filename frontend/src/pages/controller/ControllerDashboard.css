@@ -1,0 +1,125 @@
+.controller-dashboard {
+
+    width: 100%;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+/* Header */
+
+.controller-dashboard-header {
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    padding: 22px 25px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+
+}
+
+
+.controller-dashboard-header h1 {
+
+    margin: 0;
+
+    font-size: 26px;
+
+    font-weight: 700;
+
+    color: #1f2937;
+
+}
+
+
+.controller-dashboard-header p {
+
+    margin-top: 8px;
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+}
+
+
+
+/* Main content */
+
+.controller-dashboard-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+
+/* Statistics */
+
+.controller-dashboard-stat-section {
+
+    width: 100%;
+
+}
+
+
+
+/* Charts */
+
+.controller-dashboard-chart-section {
+
+    width: 100%;
+
+}
+
+
+
+/* Loading */
+
+.controller-dashboard-loading {
+
+    min-height: 400px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+
+
+    .controller-dashboard {
+
+        padding: 15px;
+
+    }
+
+
+    .controller-dashboard-header h1 {
+
+        font-size: 22px;
+
+    }
+
+
+}

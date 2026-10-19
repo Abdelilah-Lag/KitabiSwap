@@ -1,0 +1,218 @@
+.controller-catalogue-page {
+
+    width: 100%;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+
+
+
+/* Header */
+
+.controller-catalogue-header {
+
+    background: #ffffff;
+
+    padding: 22px 25px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+
+}
+
+
+
+.controller-catalogue-title h1 {
+
+    margin: 0;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #1f2937;
+
+}
+
+
+
+.controller-catalogue-title p {
+
+    margin-top: 8px;
+
+    color: #6b7280;
+
+    font-size: 14px;
+
+}
+
+
+
+
+
+/* Button */
+
+.controller-catalogue-add-btn {
+
+    background: #2563eb;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .2s;
+
+}
+
+
+
+.controller-catalogue-add-btn:hover {
+
+    opacity: .85;
+
+}
+
+
+
+
+
+/* Search + Filters */
+
+.controller-catalogue-tools {
+
+    background: white;
+
+    padding: 20px;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.05);
+
+}
+
+
+
+
+
+/* Content */
+
+.controller-catalogue-content {
+
+    background: white;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    min-height: 300px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.05);
+
+}
+
+
+
+
+
+/* Loading */
+
+.controller-catalogue-loading {
+
+    height: 300px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+
+
+/* Error */
+
+.controller-catalogue-error {
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    font-weight: 600;
+
+}
+
+
+
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+
+    .controller-catalogue-page {
+
+        padding:15px;
+
+    }
+
+
+
+    .controller-catalogue-header {
+
+        flex-direction: column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+
+
+    .controller-catalogue-add-btn {
+
+        width:100%;
+
+    }
+
+
+}

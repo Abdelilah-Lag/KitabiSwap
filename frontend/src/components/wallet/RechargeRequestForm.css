@@ -1,0 +1,429 @@
+/* ==========================================================
+   RECHARGE REQUEST FORM
+========================================================== */
+
+.wallet-form{
+
+    background:linear-gradient(180deg,#FFFFFF 0%,#F8FAFC 100%);
+
+    border:1px solid #E2E8F0;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    box-shadow:
+        0 12px 35px rgba(15,23,42,.08);
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.wallet-form-header{
+
+    margin-bottom:35px;
+
+}
+
+.wallet-form-header h2{
+
+    font-size:34px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.wallet-form-header p{
+
+    font-size:17px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   INPUT GROUP
+========================================================== */
+
+.wallet-input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:30px;
+
+}
+
+.wallet-input-group label{
+
+    margin-bottom:12px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.wallet-input-group input[type="number"]{
+
+    width:100%;
+
+    height:60px;
+
+    padding:0 22px;
+
+    border-radius:16px;
+
+    border:1px solid #CBD5E1;
+
+    background:#FFFFFF;
+
+    font-size:17px;
+
+    color:#0F172A;
+
+    transition:.3s;
+
+}
+
+.wallet-input-group input[type="number"]:focus{
+
+    outline:none;
+
+    border-color:#0F766E;
+
+    box-shadow:
+        0 0 0 5px rgba(15,118,110,.12);
+
+}
+
+/* ==========================================================
+   UPLOAD BUTTON
+========================================================== */
+
+.wallet-upload-btn{
+
+    width:100%;
+
+    height:60px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:16px;
+
+    font-size:17px;
+
+    font-weight:700;
+
+    color:#0F766E;
+
+    background:#ECFDF5;
+
+    border:2px dashed #14B8A6;
+
+    transition:.3s;
+
+}
+
+.wallet-upload-btn:hover{
+
+    background:#D1FAE5;
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================================
+   IMAGE PREVIEW
+========================================================== */
+
+.wallet-preview{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.wallet-preview img{
+
+    width:280px;
+
+    max-width:100%;
+
+    border-radius:18px;
+
+    border:1px solid #E2E8F0;
+
+    background:#FFFFFF;
+
+    padding:10px;
+
+    box-shadow:
+        0 10px 25px rgba(15,23,42,.10);
+
+}
+
+/* ==========================================================
+   ERROR
+========================================================== */
+
+.wallet-error{
+
+    margin-top:10px;
+
+    color:#DC2626;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   INFO BOX
+========================================================== */
+
+.wallet-info-box{
+
+    margin:35px 0;
+
+    padding:25px;
+
+    border-radius:22px;
+
+    background:linear-gradient(135deg,#ECFDF5,#F0FDFA);
+
+    border:1px solid #A7F3D0;
+
+}
+
+.wallet-info-box strong{
+
+    display:block;
+
+    margin-bottom:15px;
+
+    color:#065F46;
+
+    font-size:18px;
+
+    font-weight:800;
+
+}
+
+.wallet-info-box ul{
+
+    margin:0;
+
+    padding-left:22px;
+
+}
+
+.wallet-info-box li{
+
+    margin-bottom:12px;
+
+    color:#065F46;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+}
+
+/* ==========================================================
+   SUBMIT BUTTON
+========================================================== */
+
+.wallet-submit-btn{
+
+    width:100%;
+
+    height:62px;
+
+    border:none;
+
+    cursor:pointer;
+
+    border-radius:16px;
+
+    font-size:18px;
+
+    font-weight:800;
+
+    color:#FFFFFF;
+
+    background:linear-gradient(135deg,#0F766E,#115E59);
+
+    transition:.3s;
+
+    box-shadow:
+        0 15px 30px rgba(15,118,110,.22);
+
+}
+
+.wallet-submit-btn:hover:not(:disabled){
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 22px 40px rgba(15,118,110,.30);
+
+}
+
+.wallet-submit-btn:disabled{
+
+    opacity:.65;
+
+    cursor:not-allowed;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+.wallet-form{
+
+padding:32px;
+
+}
+
+.wallet-form-header h2{
+
+font-size:30px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.wallet-form{
+
+padding:25px;
+
+border-radius:22px;
+
+}
+
+.wallet-form-header{
+
+margin-bottom:28px;
+
+}
+
+.wallet-form-header h2{
+
+font-size:26px;
+
+}
+
+.wallet-form-header p{
+
+font-size:15px;
+
+}
+
+.wallet-input-group input[type="number"]{
+
+height:56px;
+
+font-size:16px;
+
+}
+
+.wallet-upload-btn{
+
+height:56px;
+
+font-size:16px;
+
+}
+
+.wallet-preview img{
+
+width:220px;
+
+}
+
+.wallet-info-box{
+
+padding:20px;
+
+}
+
+.wallet-submit-btn{
+
+height:56px;
+
+font-size:16px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.wallet-form{
+
+padding:20px;
+
+}
+
+.wallet-form-header h2{
+
+font-size:22px;
+
+}
+
+.wallet-form-header p{
+
+font-size:14px;
+
+}
+
+.wallet-input-group label{
+
+font-size:15px;
+
+}
+
+.wallet-preview img{
+
+width:180px;
+
+}
+
+.wallet-info-box strong{
+
+font-size:16px;
+
+}
+
+.wallet-info-box li{
+
+font-size:14px;
+
+}
+
+}
+

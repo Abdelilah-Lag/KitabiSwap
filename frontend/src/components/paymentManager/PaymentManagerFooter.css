@@ -1,0 +1,35 @@
+.payment-footer{
+
+    height:60px;
+
+    background:#ffffff;
+
+    border-top:1px solid #e5e7eb;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 30px;
+
+    color:#6b7280;
+
+    font-size:14px;
+
+    margin-top:auto;
+
+}
+
+.payment-footer-left{
+
+    font-weight:500;
+
+}
+
+.payment-footer-right{
+
+    color:#9ca3af;
+
+}

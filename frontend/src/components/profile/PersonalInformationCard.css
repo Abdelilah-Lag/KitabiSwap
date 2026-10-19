@@ -1,0 +1,154 @@
+/* ==========================================================
+   PERSONAL INFORMATION CARD
+========================================================== */
+
+.personal-information-card{
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.personal-information-card .profile-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+}
+
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.personal-information-card .profile-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(260px,1fr));
+
+    gap:22px;
+
+}
+
+
+/* ==========================================================
+   INPUT GROUP
+========================================================== */
+
+.personal-information-card .profile-input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.personal-information-card .profile-input-group label{
+
+    color:#334155;
+
+    font-size:.94rem;
+
+    font-weight:600;
+
+}
+
+.personal-information-card .profile-input-group input,
+.personal-information-card .profile-input-group select{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    background:#FFFFFF;
+
+    font-size:.95rem;
+
+    color:#0F172A;
+
+    transition:.25s;
+
+    outline:none;
+
+}
+
+.personal-information-card .profile-input-group input:focus,
+.personal-information-card .profile-input-group select:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+
+/* ==========================================================
+   BUTTON
+========================================================== */
+
+.personal-information-card .profile-save-btn{
+
+    width:max-content;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.personal-information-card .profile-save-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .personal-information-card .profile-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .personal-information-card .profile-save-btn{
+
+        width:100%;
+
+    }
+
+}

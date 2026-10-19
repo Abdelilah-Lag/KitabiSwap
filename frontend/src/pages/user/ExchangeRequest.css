@@ -1,0 +1,477 @@
+/* ==========================
+   PAGE
+========================== */
+
+.exchange-request-page{
+
+    min-height:100vh;
+
+    background:#F8FAFC;
+
+    padding:50px 0;
+
+}
+
+.exchange-request-container{
+
+    width:92%;
+
+    max-width:1450px;
+
+    margin:auto;
+
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.exchange-request-header{
+
+    margin-bottom:40px;
+
+}
+
+.exchange-request-header h1{
+
+    font-size:38px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.exchange-request-header p{
+
+    color:#64748B;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   REQUESTED BOOK
+========================== */
+
+.requested-book-section{
+
+    background:#FFFFFF;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.requested-book-section h2{
+
+    margin-bottom:25px;
+
+    color:#0F172A;
+
+    font-size:26px;
+
+}
+
+.requested-book-card{
+
+    display:flex;
+
+    gap:30px;
+
+    align-items:flex-start;
+
+}
+
+.requested-book-card img{
+
+    width:220px;
+
+    height:310px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.12);
+
+}
+
+.requested-book-info{
+
+    flex:1;
+
+}
+
+.requested-book-info h3{
+
+    font-size:30px;
+
+    color:#0F172A;
+
+    margin-bottom:8px;
+
+}
+
+.requested-book-info p{
+
+    font-size:18px;
+
+    color:#64748B;
+
+    margin-bottom:25px;
+
+}
+
+.requested-book-info div{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:14px 0;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.requested-book-info strong{
+
+    color:#475569;
+
+}
+
+.requested-book-info span{
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+/* ==========================
+   MY BOOKS
+========================== */
+
+.my-books-section{
+
+    background:#FFFFFF;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.my-books-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.my-books-header h2{
+
+    font-size:26px;
+
+    color:#0F172A;
+
+}
+
+.my-books-header span{
+
+    background:#0F766E;
+
+    color:white;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+}
+
+.selected-books-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(420px,1fr));
+
+    gap:20px;
+
+}
+
+.empty-books{
+
+    text-align:center;
+
+    padding:60px;
+
+    color:#64748B;
+
+    font-size:18px;
+
+}
+
+/* ==========================
+   MESSAGE
+========================== */
+
+.exchange-message-section{
+
+    background:#FFFFFF;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:35px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+
+}
+
+.exchange-message-section h2{
+
+    margin-bottom:20px;
+
+    font-size:26px;
+
+    color:#0F172A;
+
+}
+
+.exchange-message-section textarea{
+
+    width:100%;
+
+    min-height:180px;
+
+    resize:vertical;
+
+    padding:18px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:14px;
+
+    outline:none;
+
+    font-size:16px;
+
+    font-family:inherit;
+
+    transition:.3s;
+
+}
+
+.exchange-message-section textarea:focus{
+
+    border-color:#0F766E;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.exchange-submit{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:20px;
+
+}
+
+.cancel-btn{
+
+    background:#E2E8F0;
+
+    color:#0F172A;
+
+    border:none;
+
+    padding:15px 35px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cancel-btn:hover{
+
+    background:#CBD5E1;
+
+}
+
+.send-btn{
+
+    background:#0F766E;
+
+    color:white;
+
+    border:none;
+
+    padding:15px 40px;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.send-btn:hover{
+
+    background:#115E59;
+
+}
+
+.send-btn:disabled{
+
+    opacity:.6;
+
+    cursor:not-allowed;
+
+}
+
+/* ==========================
+   LOADING
+========================== */
+
+.exchange-request-loading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:400px;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#0F766E;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:1100px){
+
+.requested-book-card{
+
+flex-direction:column;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.requested-book-card img{
+
+width:240px;
+
+height:340px;
+
+}
+
+.requested-book-info{
+
+width:100%;
+
+}
+
+.selected-books-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.exchange-request-page{
+
+padding:30px 0;
+
+}
+
+.exchange-request-container{
+
+width:95%;
+
+}
+
+.exchange-request-header h1{
+
+font-size:30px;
+
+}
+
+.my-books-header{
+
+flex-direction:column;
+
+gap:15px;
+
+align-items:flex-start;
+
+}
+
+.exchange-submit{
+
+flex-direction:column;
+
+}
+
+.cancel-btn,
+
+.send-btn{
+
+width:100%;
+
+}
+
+}

@@ -1,0 +1,262 @@
+/* ==========================================================
+   FAVORITE BOOK CARD
+========================================================== */
+
+.favorite-book-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    transition:.30s;
+
+    box-shadow:0 6px 18px rgba(15,23,42,.05);
+
+}
+
+.favorite-book-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(15,23,42,.12);
+
+}
+
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.favorite-book-image{
+
+    width:100%;
+
+    height:300px;
+
+    background:#F8FAFC;
+
+    overflow:hidden;
+
+}
+
+.favorite-book-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.favorite-book-card:hover .favorite-book-image img{
+
+    transform:scale(1.05);
+
+}
+
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.favorite-book-content{
+
+    padding:22px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.favorite-book-content h3{
+
+    margin:0;
+
+    color:#0F172A;
+
+    font-size:1.25rem;
+
+    font-weight:700;
+
+    line-height:1.45;
+
+}
+
+.favorite-author{
+
+    margin:0;
+
+    color:#475569;
+
+    font-size:.96rem;
+
+    font-weight:500;
+
+}
+
+
+/* ==========================================================
+   BOOK INFO
+========================================================== */
+
+.favorite-info{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:10px 0;
+
+    border-bottom:1px solid #EEF2F7;
+
+    font-size:.94rem;
+
+}
+
+.favorite-info:last-child{
+
+    border-bottom:none;
+
+}
+
+.favorite-info span{
+
+    color:#64748B;
+
+}
+
+.favorite-info strong{
+
+    color:#0F172A;
+
+    font-weight:600;
+
+    text-align:right;
+
+}
+
+
+/* ==========================================================
+   ACTIONS
+========================================================== */
+
+.favorite-actions{
+
+    display:flex;
+
+    gap:12px;
+
+    padding:0 22px 22px;
+
+}
+
+.favorite-actions button{
+
+    flex:1;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:13px;
+
+    cursor:pointer;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    transition:.25s;
+
+}
+
+
+/* ==========================================================
+   DETAILS BUTTON
+========================================================== */
+
+.favorite-details-btn{
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+}
+
+.favorite-details-btn:hover{
+
+    background:#1D4ED8;
+
+}
+
+
+/* ==========================================================
+   REMOVE BUTTON
+========================================================== */
+
+.favorite-remove-btn{
+
+    background:#FEE2E2;
+
+    color:#DC2626;
+
+}
+
+.favorite-remove-btn:hover{
+
+    background:#FECACA;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .favorite-book-image{
+
+        height:260px;
+
+    }
+
+    .favorite-actions{
+
+        flex-direction:column;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .favorite-book-content{
+
+        padding:18px;
+
+    }
+
+    .favorite-actions{
+
+        padding:0 18px 18px;
+
+    }
+
+}

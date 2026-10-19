@@ -1,0 +1,22 @@
+.exchange-submission-card{background:#fff;border:1px solid rgba(0,0,0,.08);border-radius:12px;overflow:hidden;}
+.exchange-submission-card .card-top{display:flex;align-items:flex-start;justify-content:space-between;padding:12px 14px;background:rgba(0,0,0,.02);}
+.exchange-submission-card .user{display:flex;gap:10px;}
+.exchange-submission-card .user-avatar{width:42px;height:42px;border-radius:50%;object-fit:cover;}
+.exchange-submission-card .user-name{font-weight:700;}
+.exchange-submission-card .user-meta{font-size:12px;opacity:.75;margin-top:2px;}
+.exchange-submission-card .badge{font-size:12px;padding:6px 10px;border-radius:999px;background:#f3f4f6;}
+.exchange-submission-card .card-body{padding:12px 14px;}
+.exchange-submission-card .submission-id{font-weight:600;margin-bottom:6px;}
+.exchange-submission-card .created-at{font-size:12px;opacity:.75;margin-bottom:10px;}
+.exchange-submission-card .book-mini{display:flex;gap:12px;}
+.exchange-submission-card .cover{width:64px;height:84px;object-fit:cover;border-radius:8px;border:1px solid rgba(0,0,0,.08);}
+.exchange-submission-card .book-title{font-weight:700;margin-bottom:2px;}
+.exchange-submission-card .book-author{opacity:.85;font-size:13px;margin-bottom:6px;}
+.exchange-submission-card .book-sale{font-size:13px;opacity:.9;margin:2px 0;}
+.exchange-submission-card .card-actions{display:flex;gap:10px;flex-wrap:wrap;padding:12px 14px;border-top:1px solid rgba(0,0,0,.06);}
+.exchange-submission-card .btn{padding:9px 12px;border-radius:10px;border:1px solid rgba(0,0,0,.12);background:#f7f7f7;cursor:pointer;}
+.exchange-submission-card .btn:disabled{opacity:.5;cursor:not-allowed;}
+.exchange-submission-card .btn-primary{background:#2563eb;border-color:#2563eb;color:#fff;}
+.exchange-submission-card .btn-secondary{background:#e5e7eb;border-color:#d1d5db;}
+.exchange-submission-card .btn-danger{background:#ef4444;border-color:#ef4444;color:#fff;}
+

@@ -1,0 +1,389 @@
+/* ==========================================================
+   BOOK PREVIEW
+========================================================== */
+
+.preview-card{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:40px;
+
+    padding:32px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:24px;
+
+    box-shadow:0 12px 35px rgba(15,23,42,.08);
+
+}
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.preview-image{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+}
+
+.preview-image img{
+
+    width:100%;
+
+    max-width:280px;
+
+    aspect-ratio:3/4;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    border:1px solid #E2E8F0;
+
+    background:#F8FAFC;
+
+    box-shadow:0 18px 35px rgba(15,23,42,.15);
+
+    transition:.35s;
+
+}
+
+.preview-image img:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 22px 45px rgba(15,23,42,.20);
+
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.preview-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.preview-title{
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    line-height:1.3;
+
+}
+
+.preview-subtitle{
+
+    font-size:1rem;
+
+    font-weight:500;
+
+    color:#64748B;
+
+    margin-top:-8px;
+
+}
+
+/* ==========================================================
+   INFO
+========================================================== */
+
+.preview-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px 16px;
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:14px;
+
+    transition:.25s;
+
+}
+
+.preview-item:hover{
+
+    background:#EFF6FF;
+
+    border-color:#3B82F6;
+
+}
+
+.preview-item svg{
+
+    font-size:18px;
+
+    color:#2563EB;
+
+    flex-shrink:0;
+
+}
+
+.preview-item strong{
+
+    color:#0F172A;
+
+    font-weight:600;
+
+}
+
+.preview-item span{
+
+    color:#475569;
+
+    word-break:break-word;
+
+}
+
+/* ==========================================================
+   DESCRIPTION
+========================================================== */
+
+.preview-section{
+
+    margin-top:10px;
+
+    padding:22px;
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+}
+
+.preview-section h4{
+
+    margin-bottom:10px;
+
+    font-size:1rem;
+
+    color:#0F172A;
+
+    font-weight:600;
+
+}
+
+.preview-section p{
+
+    color:#475569;
+
+    line-height:1.8;
+
+    white-space:pre-wrap;
+
+}
+
+/* ==========================================================
+   BADGES
+========================================================== */
+
+.preview-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:6px 14px;
+
+    border-radius:999px;
+
+    background:#DBEAFE;
+
+    color:#2563EB;
+
+    font-size:.85rem;
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   PLACEHOLDER
+========================================================== */
+
+.preview-placeholder{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:100%;
+
+    height:380px;
+
+    background:#F8FAFC;
+
+    border:2px dashed #CBD5E1;
+
+    border-radius:18px;
+
+    color:#94A3B8;
+
+    font-size:1rem;
+
+}
+
+/* ==========================================================
+   ANIMATION
+========================================================== */
+
+.preview-card{
+
+    animation:fadePreview .35s ease;
+
+}
+
+@keyframes fadePreview{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media(max-width:992px){
+
+    .preview-card{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .preview-image{
+
+        justify-content:center;
+
+    }
+
+    .preview-image img{
+
+        max-width:240px;
+
+    }
+
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:768px){
+
+    .preview-card{
+
+        padding:22px;
+
+        gap:26px;
+
+    }
+
+    .preview-title{
+
+        font-size:1.5rem;
+
+        text-align:center;
+
+    }
+
+    .preview-subtitle{
+
+        text-align:center;
+
+    }
+
+    .preview-image img{
+
+        max-width:210px;
+
+    }
+
+    .preview-item{
+
+        padding:10px 14px;
+
+    }
+
+    .preview-section{
+
+        padding:18px;
+
+    }
+
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media(max-width:480px){
+
+    .preview-card{
+
+        padding:18px;
+
+    }
+
+    .preview-title{
+
+        font-size:1.3rem;
+
+    }
+
+    .preview-image img{
+
+        max-width:180px;
+
+    }
+
+}

@@ -1,0 +1,29 @@
+.controller-dashboard-charts{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+@media(max-width:1000px){
+    .controller-dashboard-charts{
+        grid-template-columns:1fr;
+    }
+}
+
+.controller-dashboard-chart-card{
+    background:white;
+    border:1px solid #e5e7eb;
+    border-radius:14px;
+    padding:18px;
+}
+
+.controller-dashboard-chart-header h3{
+    margin:0 0 15px;
+    font-size:16px;
+    color:#111827;
+}
+
+.controller-dashboard-chart{
+    height:320px;
+}
+

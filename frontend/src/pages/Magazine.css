@@ -1,0 +1,607 @@
+/* ==========================================================
+                    MAGAZINE PAGE
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.magazine-container{
+
+    width:90%;
+
+    max-width:1300px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+                    HERO
+========================================================== */
+
+.magazine-hero{
+
+    background:linear-gradient(135deg,#fffdf7 0%,#fff7ed 100%);
+
+    padding:90px 0;
+
+}
+
+.magazine-hero .magazine-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+.magazine-left{
+
+    flex:1;
+
+}
+
+.magazine-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.magazine-right img{
+
+    width:100%;
+
+    max-width:550px;
+
+    animation:floatMagazine 5s ease-in-out infinite;
+
+}
+
+.magazine-tag{
+
+    display:inline-block;
+
+    background:#f59e0b;
+
+    color:#ffffff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.magazine-left h1{
+
+    font-size:54px;
+
+    color:#0f172a;
+
+    line-height:1.2;
+
+    margin-bottom:22px;
+
+}
+
+.magazine-left p{
+
+    color:#64748b;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================================
+                    SEARCH BAR
+========================================================== */
+
+.search-box{
+
+    width:100%;
+
+    max-width:650px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    border-radius:14px;
+
+    border:2px solid #fde68a;
+
+    outline:none;
+
+    background:#ffffff;
+
+    font-size:17px;
+
+    transition:.3s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.search-box input:focus{
+
+    border-color:#f59e0b;
+
+    box-shadow:0 15px 35px rgba(245,158,11,.18);
+
+}
+
+/* ==========================================================
+                    FLOAT ANIMATION
+========================================================== */
+
+@keyframes floatMagazine{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+/* ==========================================================
+                    FILTERS
+========================================================== */
+
+.filters-section{
+
+    margin-top:-45px;
+
+    position:relative;
+
+    z-index:10;
+
+    margin-bottom:70px;
+
+}
+
+.filters{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.filter-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.filter-title{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#475569;
+
+    margin-bottom:8px;
+
+}
+
+.filters select,
+
+.filters input{
+
+    width:100%;
+
+    padding:15px 18px;
+
+    border:1px solid #e2e8f0;
+
+    border-radius:12px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    background:#fff;
+
+}
+
+.filters select:focus,
+
+.filters input:focus{
+
+    border-color:#f59e0b;
+
+    box-shadow:0 0 0 4px rgba(245,158,11,.15);
+
+}
+
+.filters input::placeholder{
+
+    color:#94a3b8;
+
+}
+
+/* ==========================================================
+                    MAGAZINE BOOKS
+========================================================== */
+
+.magazine-books{
+
+    padding:20px 0 80px;
+
+}
+
+.magazine-books .section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.magazine-books .section-title h2{
+
+    font-size:40px;
+
+    color:#0f172a;
+
+    margin-bottom:15px;
+
+}
+
+.magazine-books .section-title p{
+
+    color:#64748b;
+
+    font-size:17px;
+
+}
+
+/* ==========================================================
+                    LOADING
+========================================================== */
+
+.loading{
+
+    text-align:center;
+
+    padding:80px 0;
+
+    font-size:22px;
+
+    color:#f59e0b;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+                    NO BOOKS
+========================================================== */
+
+.no-books{
+
+    max-width:700px;
+
+    margin:70px auto;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.no-books h2{
+
+    font-size:34px;
+
+    color:#0f172a;
+
+    margin-bottom:18px;
+
+}
+
+.no-books p{
+
+    color:#64748b;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+                    HOVER EFFECT
+========================================================== */
+
+.filters{
+
+    transition:.35s;
+
+}
+
+.filters:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+
+}
+/* ==========================================================
+                    PAGINATION
+========================================================== */
+
+.pagination-section{
+
+    padding:20px 0 80px;
+
+}
+
+.pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.pagination button{
+
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#f59e0b;
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pagination button:hover:not(:disabled){
+
+    background:#d97706;
+
+    transform:translateY(-3px);
+
+}
+
+.pagination button:disabled{
+
+    background:#cbd5e1;
+
+    cursor:not-allowed;
+
+}
+
+.pagination span{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+/* ==========================================================
+                    RESPONSIVE
+========================================================== */
+
+@media (max-width:1100px){
+
+    .magazine-hero .magazine-container{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+    }
+
+    .magazine-left h1{
+
+        font-size:44px;
+
+    }
+
+    .search-box{
+
+        margin:auto;
+
+    }
+
+}
+
+@media (max-width:900px){
+
+    .filters{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .magazine-hero{
+
+        padding:70px 0;
+
+    }
+
+    .magazine-left h1{
+
+        font-size:36px;
+
+    }
+
+    .magazine-left p{
+
+        font-size:16px;
+
+    }
+
+    .filters{
+
+        grid-template-columns:1fr;
+
+        padding:25px;
+
+    }
+
+    .pagination{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .pagination button{
+
+        width:220px;
+
+    }
+
+}
+
+@media (max-width:500px){
+
+    .magazine-container{
+
+        width:92%;
+
+    }
+
+    .magazine-left h1{
+
+        font-size:30px;
+
+    }
+
+    .magazine-right img{
+
+        max-width:320px;
+
+    }
+
+    .search-box input{
+
+        padding:16px;
+
+        font-size:15px;
+
+    }
+
+    .filters{
+
+        border-radius:16px;
+
+        padding:20px;
+
+    }
+
+}
+
+/* ==========================================================
+                    FADE ANIMATION
+========================================================== */
+
+.loading,
+.no-books,
+.filters{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

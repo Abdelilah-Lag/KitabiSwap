@@ -1,0 +1,372 @@
+/* ==========================================
+   MAGAZINE SECTION
+========================================== */
+
+.magazine-section{
+
+    position:relative;
+
+    padding:100px 0;
+
+    background:
+        linear-gradient(to bottom,#FFFFFF,#F8FAFC);
+
+    overflow:hidden;
+
+}
+
+.magazine-container{
+
+    width:92%;
+
+    max-width:1500px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.magazine-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    gap:30px;
+
+    margin-bottom:55px;
+
+}
+
+.magazine-header h2{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:14px;
+
+    line-height:1.2;
+
+}
+
+.magazine-header p{
+
+    max-width:700px;
+
+    color:#64748B;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   VIEW ALL BUTTON
+========================================== */
+
+.magazine-view-all{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    min-width:210px;
+
+    height:56px;
+
+    padding:0 28px;
+
+    border-radius:16px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    color:#FFF;
+
+    background:linear-gradient(
+        135deg,
+        #0F766E,
+        #115E59
+    );
+
+    transition:all .35s ease;
+
+    box-shadow:
+        0 15px 35px rgba(15,118,110,.20);
+
+}
+
+.magazine-view-all:hover{
+
+    transform:translateY(-4px);
+
+    background:linear-gradient(
+        135deg,
+        #115E59,
+        #134E4A
+    );
+
+    box-shadow:
+        0 20px 40px rgba(15,118,110,.28);
+
+}
+
+/* ==========================================
+   SWIPER
+========================================== */
+
+.magazine-section .swiper{
+
+    padding:18px 10px 60px;
+
+}
+
+.magazine-section .swiper-slide{
+
+    display:flex;
+
+    height:auto;
+
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+.magazine-section .swiper-button-next,
+
+.magazine-section .swiper-button-prev{
+
+    width:58px;
+
+    height:58px;
+
+    border-radius:50%;
+
+    background:#FFFFFF;
+
+    color:#0F766E;
+
+    border:1px solid #E2E8F0;
+
+    box-shadow:
+
+        0 10px 28px rgba(15,23,42,.08),
+
+        0 3px 10px rgba(15,23,42,.05);
+
+    transition:all .3s ease;
+
+}
+
+.magazine-section .swiper-button-next:hover,
+
+.magazine-section .swiper-button-prev:hover{
+
+    background:#0F766E;
+
+    color:#FFF;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+        0 18px 35px rgba(15,118,110,.25);
+
+}
+
+.magazine-section .swiper-button-next::after,
+
+.magazine-section .swiper-button-prev::after{
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   PAGINATION
+========================================== */
+
+.magazine-section .swiper-pagination{
+
+    bottom:8px !important;
+
+}
+
+.magazine-section .swiper-pagination-bullet{
+
+    width:12px;
+
+    height:12px;
+
+    background:#CBD5E1;
+
+    opacity:1;
+
+    transition:.3s;
+
+}
+
+.magazine-section .swiper-pagination-bullet-active{
+
+    width:34px;
+
+    border-radius:30px;
+
+    background:#0F766E;
+
+}
+
+/* ==========================================
+   DECORATION
+========================================== */
+
+.magazine-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+
+    right:-120px;
+
+    width:300px;
+
+    height:300px;
+
+    border-radius:50%;
+
+    background:rgba(15,118,110,.05);
+
+}
+
+.magazine-section::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-100px;
+
+    left:-100px;
+
+    width:250px;
+
+    height:250px;
+
+    border-radius:50%;
+
+    background:rgba(15,118,110,.04);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.magazine-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.magazine-header h2{
+
+font-size:36px;
+
+}
+
+.magazine-header p{
+
+font-size:17px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.magazine-section{
+
+padding:70px 0;
+
+}
+
+.magazine-header{
+
+margin-bottom:40px;
+
+}
+
+.magazine-header h2{
+
+font-size:30px;
+
+}
+
+.magazine-header p{
+
+font-size:16px;
+
+line-height:1.7;
+
+}
+
+.magazine-view-all{
+
+width:100%;
+
+}
+
+.magazine-section .swiper{
+
+padding-bottom:45px;
+
+}
+
+.magazine-section .swiper-button-next,
+
+.magazine-section .swiper-button-prev{
+
+display:none;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.magazine-header h2{
+
+font-size:27px;
+
+}
+
+.magazine-header p{
+
+font-size:15px;
+
+}
+
+}

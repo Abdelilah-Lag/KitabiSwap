@@ -1,0 +1,464 @@
+/* ==========================================================
+   RECHARGE HISTORY
+========================================================== */
+
+.recharge-history{
+
+    margin-top:70px;
+
+    background:linear-gradient(180deg,#FFFFFF 0%,#F8FAFC 100%);
+
+    border:1px solid #E2E8F0;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 12px 35px rgba(15,23,42,.08);
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.recharge-history-header{
+
+    padding:35px 40px;
+
+    border-bottom:1px solid #E2E8F0;
+
+    background:linear-gradient(135deg,#F8FAFC,#FFFFFF);
+
+}
+
+.recharge-history-header h2{
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.recharge-history-header p{
+
+    font-size:16px;
+
+    color:#64748B;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+.history-table{
+
+    width:100%;
+
+    overflow-x:auto;
+
+}
+
+.history-table table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:850px;
+
+}
+
+.history-table thead{
+
+    background:#F8FAFC;
+
+}
+
+.history-table th{
+
+    padding:20px 24px;
+
+    text-align:left;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    color:#475569;
+
+    border-bottom:1px solid #E2E8F0;
+
+    white-space:nowrap;
+
+}
+
+.history-table td{
+
+    padding:22px 24px;
+
+    font-size:15px;
+
+    color:#334155;
+
+    border-bottom:1px solid #F1F5F9;
+
+    vertical-align:middle;
+
+}
+
+.history-table tbody tr{
+
+    transition:.25s;
+
+}
+
+.history-table tbody tr:hover{
+
+    background:#F8FAFC;
+
+}
+
+/* ==========================================================
+   PRICE
+========================================================== */
+
+.history-price{
+
+    font-size:18px;
+
+    font-weight:800;
+
+    color:#0F766E;
+
+}
+
+/* ==========================================================
+   STATUS
+========================================================== */
+
+.history-status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:110px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    text-transform:capitalize;
+
+    letter-spacing:.3px;
+
+}
+
+.history-status.pending{
+
+    color:#92400E;
+
+    background:#FEF3C7;
+
+}
+
+.history-status.approved{
+
+    color:#065F46;
+
+    background:#D1FAE5;
+
+}
+
+.history-status.rejected{
+
+    color:#991B1B;
+
+    background:#FEE2E2;
+
+}
+
+/* ==========================================================
+   VIEW BUTTON
+========================================================== */
+
+.history-proof-btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#FFFFFF;
+
+    background:linear-gradient(135deg,#0F766E,#115E59);
+
+    transition:.3s;
+
+    box-shadow:
+        0 8px 20px rgba(15,118,110,.20);
+
+}
+
+.history-proof-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 14px 30px rgba(15,118,110,.28);
+
+}
+
+/* ==========================================================
+   EMPTY STATE
+========================================================== */
+
+.history-empty{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 30px;
+
+}
+
+.history-empty-icon{
+
+    width:120px;
+
+    height:120px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    border-radius:50%;
+
+    background:linear-gradient(135deg,#0F766E,#14B8A6);
+
+    color:#FFFFFF;
+
+    font-size:55px;
+
+    box-shadow:
+        0 20px 40px rgba(15,118,110,.22);
+
+}
+
+.history-empty h3{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:12px;
+
+}
+
+.history-empty p{
+
+    max-width:500px;
+
+    color:#64748B;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   SCROLLBAR
+========================================================== */
+
+.history-table::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.history-table::-webkit-scrollbar-thumb{
+
+    background:#CBD5E1;
+
+    border-radius:20px;
+
+}
+
+.history-table::-webkit-scrollbar-thumb:hover{
+
+    background:#94A3B8;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+.recharge-history-header{
+
+padding:30px;
+
+}
+
+.recharge-history-header h2{
+
+font-size:28px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.recharge-history{
+
+margin-top:50px;
+
+border-radius:22px;
+
+}
+
+.recharge-history-header{
+
+padding:25px;
+
+}
+
+.recharge-history-header h2{
+
+font-size:24px;
+
+}
+
+.recharge-history-header p{
+
+font-size:15px;
+
+}
+
+.history-table th,
+
+.history-table td{
+
+padding:18px;
+
+}
+
+.history-empty{
+
+padding:60px 20px;
+
+}
+
+.history-empty-icon{
+
+width:90px;
+
+height:90px;
+
+font-size:42px;
+
+margin-bottom:18px;
+
+}
+
+.history-empty h3{
+
+font-size:22px;
+
+}
+
+.history-empty p{
+
+font-size:15px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.recharge-history-header{
+
+padding:20px;
+
+}
+
+.recharge-history-header h2{
+
+font-size:22px;
+
+}
+
+.history-empty{
+
+padding:45px 18px;
+
+}
+
+.history-empty-icon{
+
+width:75px;
+
+height:75px;
+
+font-size:34px;
+
+}
+
+.history-empty h3{
+
+font-size:20px;
+
+}
+
+.history-empty p{
+
+font-size:14px;
+
+}
+
+}
+

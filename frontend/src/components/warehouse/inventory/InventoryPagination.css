@@ -1,0 +1,7 @@
+.inventory-pagination{display:flex;justify-content:space-between;align-items:center;margin:14px 2px;gap:12px;flex-wrap:wrap;}
+.inventory-page-size{display:flex;gap:8px;align-items:center;}
+.inventory-page-size select{padding:8px 10px;border:1px solid #ddd;border-radius:8px;}
+.inventory-page-controls{display:flex;gap:10px;align-items:center;}
+.inventory-page-controls button{padding:8px 10px;border:none;border-radius:8px;background:#111;color:#fff;cursor:pointer;}
+.inventory-page-controls button:disabled{background:#999;cursor:not-allowed;}
+

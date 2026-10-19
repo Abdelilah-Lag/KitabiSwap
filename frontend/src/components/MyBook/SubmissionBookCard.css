@@ -1,0 +1,486 @@
+/* ==========================================================
+   SUBMISSION BOOK CARD
+   KitabiSwap Premium UI
+========================================================== */
+
+.submission-book-card{
+
+    width:100%;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:.35s;
+
+    box-shadow:
+        0 12px 35px rgba(15,23,42,.08);
+
+    height:100%;
+
+}
+
+.submission-book-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#0F766E;
+
+    box-shadow:
+        0 22px 55px rgba(15,118,110,.18);
+
+}
+
+/* ==========================================================
+   IMAGE
+========================================================== */
+
+.submission-image{
+
+    position:relative;
+
+    width:100%;
+
+    height:320px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #F8FAFC,
+            #EEF8F7
+        );
+
+    overflow:hidden;
+
+}
+
+.submission-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.45s;
+
+}
+
+.submission-book-card:hover .submission-image img{
+
+    transform:scale(1.05);
+
+}
+
+/* ==========================================================
+   STATUS
+========================================================== */
+
+.submission-status{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    padding:9px 18px;
+
+    border-radius:50px;
+
+    color:#FFFFFF;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:.3px;
+
+    backdrop-filter:blur(8px);
+
+}
+
+/* ---------- Pending ---------- */
+
+.submission-status.pending,
+.submission-status.en_attente{
+
+    background:#F59E0B;
+
+}
+
+/* ---------- Approved ---------- */
+
+.submission-status.approved,
+.submission-status.valide{
+
+    background:#16A34A;
+
+}
+
+/* ---------- Rejected ---------- */
+
+.submission-status.rejected,
+.submission-status.refuse{
+
+    background:#DC2626;
+
+}
+
+/* ---------- Review ---------- */
+
+.submission-status.review,
+.submission-status.en_cours{
+
+    background:#0F766E;
+
+}
+
+/* ==========================================================
+   CONTENT
+========================================================== */
+
+.submission-content{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:24px;
+
+}
+
+/* ==========================================================
+   TITLE
+========================================================== */
+
+.submission-content h3{
+
+    font-size:24px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    line-height:1.35;
+
+    margin-bottom:8px;
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:2;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+}
+
+/* ==========================================================
+   AUTHOR
+========================================================== */
+
+.submission-author{
+
+    color:#64748B;
+
+    font-size:15px;
+
+    margin-bottom:22px;
+
+    white-space:nowrap;
+
+    overflow:hidden;
+
+    text-overflow:ellipsis;
+
+}
+
+/* ==========================================================
+   INFORMATION
+========================================================== */
+
+.submission-info{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+    margin-bottom:22px;
+
+}
+
+.submission-info div{
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+    padding:16px;
+
+    transition:.3s;
+
+}
+
+.submission-info div:hover{
+
+    border-color:#0F766E;
+
+    transform:translateY(-3px);
+
+}
+
+.submission-info span{
+
+    display:block;
+
+    color:#64748B;
+
+    font-size:13px;
+
+    margin-bottom:6px;
+
+}
+
+.submission-info strong{
+
+    color:#0F172A;
+
+    font-size:16px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   PRICE
+========================================================== */
+
+.submission-price{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+
+    margin-bottom:22px;
+
+}
+
+.submission-price div{
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #F8FAFC,
+            #F1FDFB
+        );
+
+    border:1px solid #D7EEEB;
+
+    border-radius:18px;
+
+    padding:18px;
+
+}
+
+.submission-price span{
+
+    display:block;
+
+    color:#64748B;
+
+    font-size:13px;
+
+    margin-bottom:8px;
+
+}
+
+.submission-price strong{
+
+    font-size:24px;
+
+    font-weight:800;
+
+    color:#0F766E;
+
+}
+
+.sale-price{
+
+    color:#F97316 !important;
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.submission-footer{
+
+    margin-top:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding-top:22px;
+
+    border-top:1px solid #E2E8F0;
+
+}
+
+.submission-footer small{
+
+    color:#64748B;
+
+    font-size:13px;
+
+}
+
+.submission-btn{
+
+    min-width:160px;
+
+    height:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:14px;
+
+    text-decoration:none;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #0F766E,
+            #115E59
+        );
+
+    color:#FFFFFF;
+
+    font-weight:700;
+
+    transition:.3s;
+
+    box-shadow:
+
+        0 10px 28px rgba(15,118,110,.25);
+
+}
+
+.submission-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+        0 18px 35px rgba(15,118,110,.35);
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+.submission-image{
+
+height:280px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.submission-content{
+
+padding:20px;
+
+}
+
+.submission-content h3{
+
+font-size:21px;
+
+}
+
+.submission-info,
+
+.submission-price{
+
+grid-template-columns:1fr;
+
+}
+
+.submission-footer{
+
+flex-direction:column;
+
+align-items:stretch;
+
+}
+
+.submission-btn{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.submission-image{
+
+height:240px;
+
+}
+
+.submission-content{
+
+padding:18px;
+
+}
+
+.submission-content h3{
+
+font-size:20px;
+
+}
+
+.submission-price strong{
+
+font-size:21px;
+
+}
+
+}

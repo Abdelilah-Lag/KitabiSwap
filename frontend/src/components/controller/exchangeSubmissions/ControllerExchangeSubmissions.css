@@ -1,0 +1,6 @@
+.controller-exchange-submissions-page{padding:18px;}
+.controller-exchange-submissions-header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:16px;}
+.muted{opacity:.7;}
+.controller-exchange-submissions-loading,.controller-exchange-submissions-error{margin-top:20px;}
+.controller-exchange-submissions-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;}
+

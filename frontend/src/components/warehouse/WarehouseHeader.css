@@ -1,0 +1,101 @@
+.warehouse-header{
+
+    height:80px;
+
+    background:#ffffff;
+
+    border-bottom:1px solid #e5e7eb;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 30px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+.warehouse-header-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.warehouse-logo{
+
+    width:55px;
+
+    height:55px;
+
+    object-fit:contain;
+
+}
+
+.warehouse-header-left h2{
+
+    margin:0;
+
+    color:#2563eb;
+
+    font-size:24px;
+
+}
+
+.warehouse-header-left span{
+
+    color:#6b7280;
+
+    font-size:14px;
+
+}
+
+.warehouse-header-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.warehouse-notification{
+
+    border:none;
+
+    background:#f3f4f6;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+}
+
+.warehouse-avatar{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}

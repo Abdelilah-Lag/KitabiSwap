@@ -1,0 +1,183 @@
+.warehouse-order-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 24px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.warehouse-order-book {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.warehouse-order-book img {
+    width: 120px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #f3f4f6;
+    flex-shrink: 0;
+}
+
+.warehouse-order-book-info {
+    flex: 1;
+}
+
+.warehouse-order-book-info h3 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    color: #111827;
+}
+
+.warehouse-order-book-info p {
+    margin: 7px 0;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.warehouse-order-total {
+    margin-top: 16px !important;
+    font-size: 20px !important;
+    font-weight: 700;
+    color: #16a34a !important;
+}
+
+.warehouse-order-section {
+    padding: 18px;
+    border-radius: 10px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+}
+
+.warehouse-order-section h4 {
+    margin: 0 0 14px;
+    color: #111827;
+    font-size: 18px;
+}
+
+.warehouse-order-section p {
+    margin: 6px 0;
+    color: #4b5563;
+    font-size: 15px;
+}
+
+.warehouse-order-payment {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 16px;
+    color: #111827;
+}
+
+.warehouse-order-payment strong {
+    color: #2563eb;
+    margin-left: 6px;
+}
+
+.warehouse-order-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+}
+
+.warehouse-btn-approve,
+.warehouse-btn-refuse {
+    border: none;
+    border-radius: 8px;
+    padding: 12px 22px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.warehouse-btn-approve {
+    background: #16a34a;
+    color: white;
+}
+
+.warehouse-btn-approve:hover:not(:disabled) {
+    background: #15803d;
+}
+
+.warehouse-btn-refuse {
+    background: #dc2626;
+    color: white;
+}
+
+.warehouse-btn-refuse:hover:not(:disabled) {
+    background: #b91c1c;
+}
+
+.warehouse-btn-approve:disabled,
+.warehouse-btn-refuse:disabled {
+    opacity: .6;
+    cursor: not-allowed;
+}
+
+/* Multi-books layout */
+.warehouse-order-books {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.warehouse-order-book-item {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    align-items: flex-start;
+}
+
+.warehouse-order-book-item img {
+    width: 120px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    background: #f3f4f6;
+    flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+
+    .warehouse-order-books {
+        flex-direction: column;
+    }
+
+    .warehouse-order-book-item img {
+        width: 160px;
+        height: 220px;
+        align-self: center;
+    }
+
+    .warehouse-order-book {
+        flex-direction: column;
+    }
+
+
+    .warehouse-order-book img {
+        width: 160px;
+        height: 220px;
+        align-self: center;
+    }
+
+    .warehouse-order-payment {
+        justify-content: flex-start;
+    }
+
+    .warehouse-order-actions {
+        flex-direction: column;
+    }
+
+    .warehouse-btn-approve,
+    .warehouse-btn-refuse {
+        width: 100%;
+    }
+
+}

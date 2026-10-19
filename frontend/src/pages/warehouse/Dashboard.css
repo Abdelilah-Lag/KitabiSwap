@@ -1,0 +1,29 @@
+.warehouse-dashboard{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+.warehouse-dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+}
+
+@media(max-width:1000px){
+
+    .warehouse-dashboard-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

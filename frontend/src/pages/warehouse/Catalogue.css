@@ -1,0 +1,55 @@
+.warehouse-catalogue-page{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+}
+
+.warehouse-catalogue-header{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:16px;
+}
+
+.warehouse-catalogue-header h1{
+  margin:0;
+  font-size:26px;
+}
+
+.warehouse-catalogue-header .muted{
+  margin:6px 0 0 0;
+  color:#6b7280;
+}
+
+.warehouse-catalogue-actions{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.warehouse-catalogue-loading,
+.warehouse-catalogue-error{
+  padding:18px;
+}
+
+.warehouse-catalogue-error{
+  color:#b91c1c;
+  background:#fef2f2;
+  border:1px solid #fecaca;
+  border-radius:10px;
+}
+
+.btn-primary{
+  background:#1d4ed8;
+  color:white;
+  border:0;
+  border-radius:10px;
+  padding:10px 14px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btn-primary:hover{
+  background:#1e40af;
+}
+

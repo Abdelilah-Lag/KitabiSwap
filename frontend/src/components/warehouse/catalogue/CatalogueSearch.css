@@ -1,0 +1,25 @@
+.warehouse-catalogue-search{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.warehouse-catalogue-search-input{
+  width:100%;
+  padding:12px 14px;
+  border-radius:12px;
+  border:1px solid #e5e7eb;
+  background:white;
+  outline:none;
+}
+
+.warehouse-catalogue-search-input:focus{
+  border-color:#93c5fd;
+  box-shadow:0 0 0 3px rgba(147,197,253,0.3);
+}
+
+.warehouse-catalogue-search-hint{
+  color:#6b7280;
+  font-size:13px;
+}
+

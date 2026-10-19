@@ -1,0 +1,164 @@
+/* ==========================================================
+   ADDRESS INFORMATION CARD
+========================================================== */
+
+.address-information-card{
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.address-information-card .profile-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:26px;
+
+}
+
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.address-information-card .profile-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,minmax(260px,1fr));
+
+    gap:22px;
+
+}
+
+
+/* ==========================================================
+   INPUT GROUP
+========================================================== */
+
+.address-information-card .profile-input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.address-information-card .profile-input-group label{
+
+    color:#334155;
+
+    font-size:.94rem;
+
+    font-weight:600;
+
+}
+
+.address-information-card .profile-input-group input,
+.address-information-card .profile-input-group textarea{
+
+    width:100%;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    padding:14px 16px;
+
+    background:#FFFFFF;
+
+    color:#0F172A;
+
+    font-size:.95rem;
+
+    transition:.25s;
+
+    outline:none;
+
+}
+
+.address-information-card .profile-input-group textarea{
+
+    resize:vertical;
+
+    min-height:100px;
+
+    line-height:1.7;
+
+}
+
+.address-information-card .profile-input-group input:focus,
+.address-information-card .profile-input-group textarea:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+
+/* ==========================================================
+   SAVE BUTTON
+========================================================== */
+
+.address-information-card .profile-save-btn{
+
+    width:max-content;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.address-information-card .profile-save-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .address-information-card .profile-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .address-information-card .profile-save-btn{
+
+        width:100%;
+
+    }
+
+}

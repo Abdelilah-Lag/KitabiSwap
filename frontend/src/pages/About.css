@@ -1,0 +1,579 @@
+/* =======================================================
+   ABOUT PAGE
+======================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.about-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Improve typography and spacing globally for About page */
+body .about-hero,
+body .mission-section,
+body .features-section,
+body .timeline-section,
+body .creator-section{
+    letter-spacing:0.1px;
+}
+
+.about-hero{
+    width:100%;
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(135deg,#f8fbff 0%,#eef5ff 100%);
+    padding:80px 0;
+}
+
+.about-hero .about-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:70px;
+}
+
+.about-left{
+    flex:1;
+}
+
+.about-right{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.about-right img{
+    width:100%;
+    max-width:550px;
+    object-fit:contain;
+    animation:floatImage 5s ease-in-out infinite;
+}
+
+.about-tag{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.about-left h1{
+    font-size:55px;
+    line-height:1.2;
+    color:#0f172a;
+    margin-bottom:25px;
+}
+
+.about-left h1{font-weight:800}
+
+.about-left p{
+    font-size:18px;
+    color:#64748b;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.about-left p{max-width:680px}
+
+.about-btn{
+    display:inline-block;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 34px;
+    border-radius:10px;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.about-btn{box-shadow:0 10px 30px rgba(37,99,235,0.12)}
+
+.about-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-4px);
+}
+
+/* =======================================
+   SECTION TITLE
+======================================= */
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.section-title p{
+    max-width:700px;
+    margin:auto;
+    color:#64748b;
+    line-height:1.8;
+    font-size:18px;
+}
+
+/* =======================================
+   MISSION
+======================================= */
+
+.mission-section{
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.mission-content{
+    max-width:750px;
+    margin:auto;
+    text-align:left;
+}
+
+.mission-content h2{
+    font-size:42px;
+    color:#0f172a;
+    margin-bottom:35px;
+}
+
+.mission-content p{
+    font-size:17px;
+    color:#64748b;
+    line-height:1.95;
+    text-align:justify;
+    max-width:720px;
+    margin:0 auto 22px;
+}
+
+/* =======================================
+   FLOAT IMAGE
+======================================= */
+
+@keyframes floatImage{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+/* =======================================================
+   WHY CHOOSE KITABISWAP
+======================================================= */
+
+.features-section{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.features-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:#ffffff;
+    border-radius:20px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    transition:all .3s ease;
+}
+
+.feature-card p{min-height:68px}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+
+.feature-icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 20px;
+    border-radius:50%;
+    background:#eff6ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:36px;
+}
+
+.feature-card h3{
+    color:#0f172a;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.feature-card p{
+    color:#64748b;
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* =======================================================
+   HOW IT WORKS
+======================================================= */
+
+.timeline-section{
+    padding:100px 0;
+    background:#ffffff;
+}
+
+.timeline-wrapper{
+    max-width:1000px;
+    margin:auto;
+}
+
+.timeline{
+    position:relative;
+    margin-top:60px;
+}
+
+.timeline::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:0;
+    transform:translateX(-50%);
+    width:4px;
+    height:100%;
+    background:#2563eb;
+    border-radius:20px;
+}
+
+.timeline-item{
+    position:relative;
+    width:50%;
+    padding:20px 50px;
+    margin-bottom:50px;
+}
+
+.timeline-item.left{
+    left:0;
+    text-align:right;
+}
+
+.timeline-item.right{
+    left:50%;
+}
+
+.timeline-content{
+    background:#ffffff;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.timeline-content:hover{
+    transform:translateY(-5px);
+}
+
+.timeline-content h3{
+    color:#0f172a;
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+.timeline-content p{
+    color:#64748b;
+    line-height:1.8;
+}
+
+.timeline-dot{
+    position:absolute;
+    top:30px;
+    width:24px;
+    height:24px;
+    background:#2563eb;
+    border-radius:50%;
+    border:5px solid #ffffff;
+    box-shadow:0 0 0 4px #bfdbfe;
+}
+
+.timeline-item.left .timeline-dot{
+    right:-12px;
+}
+
+.timeline-item.right .timeline-dot{
+    left:-12px;
+}
+
+/* =======================================================
+   STEP NUMBERS
+======================================================= */
+
+.step-badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background:#2563eb;
+    color:#ffffff;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+/* =======================================================
+   TIMELINE HEADER
+======================================================= */
+
+.timeline-title{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.timeline-title h2{
+    font-size:42px;
+    color:#0f172a;
+    margin-bottom:15px;
+}
+
+.timeline-title p{
+    max-width:700px;
+    margin:auto;
+    color:#64748b;
+    line-height:1.8;
+    font-size:18px;
+}
+/* =======================================================
+   ABOUT THE CREATOR
+======================================================= */
+
+.creator-section{
+    padding:100px 0;
+    background:#f8fafc;
+}
+
+.creator-container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:70px;
+    flex-wrap:wrap;
+}
+
+.creator-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.creator-image img{
+    width:100%;
+    max-width:380px;
+    border-radius:25px;
+    box-shadow:0 20px 50px rgba(0,0,0,.12);
+    transition:.4s;
+}
+
+.creator-image img:hover{
+    transform:scale(1.03);
+}
+
+.creator-content{
+    flex:1;
+}
+
+.creator-subtitle{
+    color:#2563eb;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.creator-content h2{
+    font-size:42px;
+    color:#0f172a;
+    margin-bottom:20px;
+}
+
+.creator-content p{max-width:720px}
+
+.creator-content h3{
+    font-size:26px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.creator-content p{
+    color:#64748b;
+    font-size:17px;
+    line-height:1.9;
+    margin-bottom:18px;
+}
+
+.creator-info{
+    margin:30px 0;
+}
+
+.creator-info div{
+    margin-bottom:12px;
+    font-size:17px;
+    color:#334155;
+}
+
+.creator-info strong{
+    color:#0f172a;
+}
+
+.portfolio-btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:16px 34px;
+    background:#2563eb;
+    color:#fff;
+    text-decoration:none;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.portfolio-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-4px);
+}
+
+/* =======================================================
+   SMALL ANIMATIONS
+======================================================= */
+
+.feature-card,
+.timeline-content,
+.creator-image img{
+    transition:all .35s ease;
+}
+
+.feature-card:hover,
+.timeline-content:hover{
+    transform:translateY(-8px);
+}
+
+/* =======================================================
+   RESPONSIVE
+======================================================= */
+
+@media (max-width:1100px){
+
+    .about-hero .about-container{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .about-left h1{
+        font-size:45px;
+    }
+
+    .creator-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+}
+
+@media (max-width:900px){
+
+    .timeline::before{
+        left:25px;
+    }
+
+    .timeline-item{
+        width:100%;
+        left:0 !important;
+        padding-left:70px;
+        padding-right:20px;
+        text-align:left !important;
+    }
+
+    .timeline-item.left .timeline-dot,
+    .timeline-item.right .timeline-dot{
+        left:13px;
+        right:auto;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .about-hero{
+        padding:70px 0;
+    }
+
+    .about-left h1{
+        font-size:36px;
+    }
+
+    .section-title h2,
+    .mission-content h2,
+    .timeline-title h2,
+    .creator-content h2{
+        font-size:32px;
+    }
+
+    .about-left p,
+    .mission-content p,
+    .creator-content p{
+        font-size:16px;
+    }
+
+    .features-grid{
+        grid-template-columns:1fr;
+    }
+
+    .feature-card{
+        padding:30px;
+    }
+
+    .creator-image img{
+        max-width:300px;
+    }
+
+}
+
+@media (max-width:500px){
+
+    .about-container{
+        width:92%;
+    }
+
+    .about-left h1{
+        font-size:30px;
+    }
+
+    .about-btn,
+    .portfolio-btn{
+        width:100%;
+        text-align:center;
+    }
+
+    .feature-icon{
+        width:70px;
+        height:70px;
+        font-size:30px;
+    }
+
+}

@@ -1,0 +1,330 @@
+/* ==========================================================
+   BOOK BASIC INFORMATION
+   KitabiSwap Premium UI
+========================================================== */
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.submission-section{
+
+    width:100%;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:22px;
+
+    padding:32px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+    box-shadow:
+        0 8px 24px rgba(15,23,42,.05);
+
+    transition:.25s;
+
+}
+
+.submission-section:hover{
+
+    box-shadow:
+        0 14px 36px rgba(15,23,42,.08);
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.section-header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    padding-bottom:20px;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.section-header h2{
+
+    margin:0;
+
+    font-size:1.6rem;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.section-header p{
+
+    margin:0;
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.submission-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+/* ==========================================================
+   FULL WIDTH
+========================================================== */
+
+.input-group.full{
+
+    grid-column:1/-1;
+
+}
+
+/* ==========================================================
+   INPUT GROUP
+========================================================== */
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+/* ==========================================================
+   LABEL
+========================================================== */
+
+.input-group label{
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+/* ==========================================================
+   INPUTS
+========================================================== */
+
+.input-group input{
+
+    width:100%;
+
+    height:50px;
+
+    padding:0 16px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:14px;
+
+    background:#FFFFFF;
+
+    color:#0F172A;
+
+    font-size:.95rem;
+
+    transition:.25s;
+
+    outline:none;
+
+}
+
+.input-group input::placeholder{
+
+    color:#94A3B8;
+
+}
+
+.input-group input:hover{
+
+    border-color:#94A3B8;
+
+}
+
+.input-group input:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+/* ==========================================================
+   ERROR
+========================================================== */
+
+.error{
+
+    color:#DC2626;
+
+    font-size:.85rem;
+
+    font-weight:500;
+
+}
+
+/* ==========================================================
+   REQUIRED LABEL
+========================================================== */
+
+.required{
+
+    color:#DC2626;
+
+    margin-left:4px;
+
+}
+
+/* ==========================================================
+   DISABLED INPUT
+========================================================== */
+
+.input-group input:disabled{
+
+    background:#F8FAFC;
+
+    color:#64748B;
+
+    cursor:not-allowed;
+
+}
+
+/* ==========================================================
+   HELP TEXT
+========================================================== */
+
+.input-help{
+
+    color:#64748B;
+
+    font-size:.82rem;
+
+    line-height:1.6;
+
+}
+
+/* ==========================================================
+   INPUT ICON
+========================================================== */
+
+.input-with-icon{
+
+    position:relative;
+
+}
+
+.input-with-icon svg{
+
+    position:absolute;
+
+    left:16px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    color:#94A3B8;
+
+    font-size:1rem;
+
+}
+
+.input-with-icon input{
+
+    padding-left:45px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .submission-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .input-group.full{
+
+        grid-column:auto;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .submission-section{
+
+        padding:24px;
+
+        border-radius:18px;
+
+    }
+
+    .section-header h2{
+
+        font-size:1.35rem;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .submission-section{
+
+        padding:20px;
+
+    }
+
+    .section-header h2{
+
+        font-size:1.2rem;
+
+    }
+
+    .input-group input{
+
+        height:46px;
+
+        font-size:.9rem;
+
+    }
+
+}

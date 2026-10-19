@@ -1,0 +1,216 @@
+/* =======================================================
+   Privacy Policy - KitabiSwap
+======================================================= */
+
+.privacy-hero {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  padding: 90px 20px;
+}
+
+.privacy-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.privacy-hero-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.privacy-hero h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.privacy-hero p {
+  font-size: 18px;
+  line-height: 1.8;
+  opacity: 0.95;
+}
+
+/* ===================================================== */
+
+.privacy-main {
+  background: #f8fafc;
+  padding: 70px 20px;
+}
+
+.privacy-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.privacy-update {
+  background: #eff6ff;
+  border-left: 5px solid #2563eb;
+  padding: 18px 22px;
+  border-radius: 12px;
+  margin-bottom: 35px;
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.privacy-section {
+  background: #fff;
+  padding: 35px;
+  border-radius: 18px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.privacy-section:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.08);
+}
+
+.privacy-section h2 {
+  color: #1e3a8a;
+  margin-bottom: 18px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.privacy-section h3 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+  color: #2563eb;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.privacy-section p {
+  color: #475569;
+  line-height: 1.9;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.privacy-section ul {
+  margin: 18px 0;
+  padding-left: 24px;
+}
+
+.privacy-section li {
+  margin-bottom: 12px;
+  line-height: 1.8;
+  color: #334155;
+  font-size: 16px;
+}
+
+.privacy-section li::marker {
+  color: #2563eb;
+}
+
+.privacy-highlight {
+  margin: 25px 0;
+  background: #eff6ff;
+  border-left: 5px solid #2563eb;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.privacy-highlight p {
+  margin: 0;
+  color: #1e3a8a;
+  font-weight: 600;
+}
+
+.privacy-highlight a {
+  color: #2563eb;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.privacy-highlight a:hover {
+  text-decoration: underline;
+}
+
+/* =======================================================
+   Responsive
+======================================================= */
+
+@media (max-width: 992px) {
+  .privacy-hero h1 {
+    font-size: 40px;
+  }
+
+  .privacy-section {
+    padding: 28px;
+  }
+
+  .privacy-section h2 {
+    font-size: 26px;
+  }
+
+  .privacy-section h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .privacy-hero {
+    padding: 70px 20px;
+  }
+
+  .privacy-hero h1 {
+    font-size: 34px;
+  }
+
+  .privacy-hero p {
+    font-size: 16px;
+  }
+
+  .privacy-main {
+    padding: 50px 15px;
+  }
+
+  .privacy-section {
+    padding: 22px;
+    border-radius: 14px;
+  }
+
+  .privacy-section h2 {
+    font-size: 24px;
+  }
+
+  .privacy-section h3 {
+    font-size: 19px;
+  }
+
+  .privacy-section p,
+  .privacy-section li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .privacy-hero h1 {
+    font-size: 28px;
+  }
+
+  .privacy-hero-tag {
+    font-size: 12px;
+    padding: 6px 14px;
+  }
+
+  .privacy-section {
+    padding: 18px;
+  }
+
+  .privacy-section h2 {
+    font-size: 22px;
+  }
+
+  .privacy-section h3 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,156 @@
+.warehouse-order-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(17, 24, 39, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 24px;
+}
+
+.warehouse-order-modal {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.warehouse-order-modal h2 {
+    margin: 0 0 24px;
+    color: #111827;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.warehouse-order-modal-close {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: #f3f4f6;
+    color: #374151;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.warehouse-order-modal-close:hover {
+    background: #e5e7eb;
+}
+
+.warehouse-order-details-book {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 28px;
+}
+
+.warehouse-order-details-book img {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    background: #f3f4f6;
+    flex-shrink: 0;
+}
+
+.warehouse-order-details-book h3 {
+    margin: 0 0 16px;
+    color: #111827;
+    font-size: 24px;
+}
+
+.warehouse-order-details-book p {
+    margin: 8px 0;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+.warehouse-order-modal-total {
+    margin-top: 18px !important;
+    color: #16a34a !important;
+    font-size: 22px !important;
+    font-weight: 700;
+}
+
+.warehouse-order-modal-section {
+    margin-top: 22px;
+    padding: 18px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background: #f9fafb;
+}
+
+.warehouse-order-modal-section h3 {
+    margin: 0 0 14px;
+    color: #111827;
+    font-size: 20px;
+}
+
+.warehouse-order-modal-section p {
+    margin: 8px 0;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+.warehouse-order-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.warehouse-order-close-btn {
+    padding: 12px 26px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.warehouse-order-close-btn:hover {
+    background: #1d4ed8;
+}
+
+@media (max-width: 768px) {
+
+    .warehouse-order-modal {
+        padding: 20px;
+    }
+
+    .warehouse-order-details-book {
+        flex-direction: column;
+        align-items: center;
+        text-align: left;
+    }
+
+    .warehouse-order-details-book img {
+        width: 170px;
+        height: 235px;
+    }
+
+    .warehouse-order-modal h2 {
+        font-size: 24px;
+        padding-right: 40px;
+    }
+
+    .warehouse-order-modal-footer {
+        justify-content: stretch;
+    }
+
+    .warehouse-order-close-btn {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,58 @@
+.warehouse-upload-cover{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.warehouse-upload-cover-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.warehouse-upload-cover-label{
+  font-weight:800;
+  color:#111827;
+}
+
+.warehouse-upload-cover-count{
+  color:#6b7280;
+  font-weight:700;
+  font-size:13px;
+}
+
+.warehouse-upload-cover input{
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:10px 12px;
+  background:white;
+}
+
+.warehouse-upload-cover-preview{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.warehouse-upload-cover-thumb{
+  width:140px;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  overflow:hidden;
+  background:#fff;
+}
+
+.warehouse-upload-cover-thumb img{
+  width:100%;
+  height:100px;
+  object-fit:cover;
+  display:block;
+}
+
+.warehouse-upload-cover-thumb-name{
+  padding:8px;
+  font-size:12px;
+  color:#374151;
+  font-weight:700;
+}
+

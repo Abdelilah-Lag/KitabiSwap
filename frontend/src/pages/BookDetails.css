@@ -1,0 +1,444 @@
+/* ===========================================
+   BOOK DETAILS PAGE
+=========================================== */
+
+.book-details-page{
+
+    background:linear-gradient(180deg,#F8FAFC 0%,#EEF6F6 100%);
+    min-height:100vh;
+    padding:140px 0 90px;
+
+}
+
+.book-details-wrapper{
+
+    max-width:1450px;
+    margin:auto;
+    padding:0 40px;
+
+}
+
+/* ===========================================
+   BREADCRUMB
+=========================================== */
+
+.breadcrumb{
+
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:12px;
+
+    margin-bottom:35px;
+
+    font-size:15px;
+
+    color:#64748B;
+
+}
+
+.breadcrumb a{
+
+    text-decoration:none;
+
+    color:#0F766E;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.breadcrumb a:hover{
+
+    color:#115E59;
+
+    text-decoration:underline;
+
+}
+
+.breadcrumb strong{
+
+    color:#0F172A;
+
+    font-weight:700;
+
+}
+
+/* ===========================================
+   HERO
+=========================================== */
+
+.book-hero{
+
+    display:grid;
+
+    grid-template-columns:480px 1fr;
+
+    gap:60px;
+
+    background:#FFF;
+
+    border-radius:30px;
+
+    padding:45px;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:
+
+        0 20px 60px rgba(15,23,42,.08),
+
+        0 8px 25px rgba(15,23,42,.05);
+
+    transition:.35s;
+
+    animation:fadeUp .45s ease;
+
+}
+
+.book-hero:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+        0 30px 70px rgba(15,23,42,.12),
+
+        0 12px 35px rgba(15,23,42,.08);
+
+}
+
+/* ===========================================
+   SECTIONS
+=========================================== */
+
+.book-section{
+
+    background:#FFF;
+
+    border-radius:24px;
+
+    padding:42px;
+
+    margin-bottom:35px;
+
+    border:1px solid #E5E7EB;
+
+    box-shadow:
+
+        0 10px 35px rgba(15,23,42,.05);
+
+    transition:.35s;
+
+    animation:fadeUp .55s ease;
+
+}
+
+.book-section:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+
+        0 20px 45px rgba(15,23,42,.08);
+
+}
+
+.book-section h2{
+
+    position:relative;
+
+    padding-left:18px;
+
+    font-size:30px;
+
+    color:#0F172A;
+
+    margin-bottom:24px;
+
+    font-weight:800;
+
+}
+
+.book-section h2::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:4px;
+
+    width:6px;
+
+    height:32px;
+
+    border-radius:50px;
+
+    background:#0F766E;
+
+}
+
+.book-section p{
+
+    font-size:17px;
+
+    color:#475569;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================
+   ADDITIONAL INFORMATIONS
+=========================================== */
+
+.additional-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+.additional-grid div{
+
+    background:#FFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    padding:24px;
+
+    transition:.3s;
+
+    box-shadow:
+
+        0 5px 18px rgba(15,23,42,.04);
+
+}
+
+.additional-grid div:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#0F766E;
+
+    box-shadow:
+
+        0 20px 35px rgba(15,118,110,.12);
+
+}
+
+.additional-grid span{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:13px;
+
+    text-transform:uppercase;
+
+    letter-spacing:.08em;
+
+    color:#94A3B8;
+
+}
+
+.additional-grid strong{
+
+    color:#0F172A;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================
+   COMING SOON
+=========================================== */
+
+.coming-soon{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:190px;
+
+    background:#F8FAFC;
+
+    border:2px dashed #CBD5E1;
+
+    border-radius:20px;
+
+    color:#94A3B8;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+/* ===========================================
+   LOADING
+=========================================== */
+
+.book-loading{
+
+    min-height:70vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#0F766E;
+
+}
+
+/* ===========================================
+   ANIMATION
+=========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================================
+   RESPONSIVE
+=========================================== */
+
+@media(max-width:1200px){
+
+.book-hero{
+
+grid-template-columns:1fr;
+
+gap:45px;
+
+padding:35px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.book-details-page{
+
+padding:120px 0 60px;
+
+}
+
+.book-details-wrapper{
+
+padding:0 18px;
+
+}
+
+.book-section{
+
+padding:28px;
+
+}
+
+.book-section h2{
+
+font-size:25px;
+
+}
+
+.additional-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.breadcrumb{
+
+font-size:14px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.book-details-wrapper{
+
+padding:0 15px;
+
+}
+
+.book-hero{
+
+padding:22px;
+
+border-radius:22px;
+
+}
+
+.book-section{
+
+padding:22px;
+
+border-radius:22px;
+
+}
+
+.book-section h2{
+
+font-size:22px;
+
+}
+
+.book-section p{
+
+font-size:16px;
+
+}
+
+.additional-grid div{
+
+padding:18px;
+
+}
+
+.additional-grid strong{
+
+font-size:16px;
+
+}
+
+}

@@ -1,0 +1,146 @@
+/* ==========================================================
+   SECURITY CARD
+========================================================== */
+
+.security-card{
+
+    width:100%;
+
+}
+
+
+/* ==========================================================
+   FORM
+========================================================== */
+
+.security-card .profile-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+
+/* ==========================================================
+   INPUT GROUP
+========================================================== */
+
+.security-card .profile-input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.security-card .profile-input-group label{
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+.security-card .profile-input-group input{
+
+    width:100%;
+
+    padding:14px 16px;
+
+    border:1px solid #CBD5E1;
+
+    border-radius:12px;
+
+    background:#FFFFFF;
+
+    color:#0F172A;
+
+    font-size:.95rem;
+
+    outline:none;
+
+    transition:.25s;
+
+}
+
+.security-card .profile-input-group input:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+
+/* ==========================================================
+   ERROR MESSAGE
+========================================================== */
+
+.profile-error{
+
+    color:#DC2626;
+
+    font-size:.85rem;
+
+    font-weight:500;
+
+}
+
+
+/* ==========================================================
+   SAVE BUTTON
+========================================================== */
+
+.security-card .profile-save-btn{
+
+    width:max-content;
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+}
+
+.security-card .profile-save-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .security-card .profile-save-btn{
+
+        width:100%;
+
+    }
+
+}

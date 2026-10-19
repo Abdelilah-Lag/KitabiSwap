@@ -1,0 +1,13 @@
+.mybook-detail-page{background:#F8FAFC;min-height:100vh;padding:40px 0}
+.mybook-detail-container{width:92%;max-width:1100px;margin:auto}
+.mybook-detail-back{background:#E2E8F0;border:none;border-radius:12px;padding:12px 18px;font-weight:700;cursor:pointer;margin-bottom:18px}
+.mybook-detail-card{background:#fff;border-radius:22px;box-shadow:0 8px 25px rgba(0,0,0,.06);display:grid;grid-template-columns:420px 1fr;gap:30px;padding:28px}
+.mybook-detail-cover img{width:100%;height:420px;object-fit:cover;border-radius:18px}
+.mybook-detail-info h1{font-size:34px;color:#0F172A;margin:0 0 8px}
+.mybook-detail-author{color:#64748B;margin:0 0 18px;font-weight:600}
+.mybook-detail-line{color:#475569;margin:10px 0}
+.mybook-detail-actions{display:flex;gap:14px;margin-top:28px}
+.mybook-detail-delete{background:#DC2626;color:#fff;border:none;border-radius:14px;padding:14px 18px;font-weight:800;cursor:pointer}
+.mybook-detail-cancel{background:#0F766E;color:#fff;border:none;border-radius:14px;padding:14px 18px;font-weight:800;cursor:pointer}
+@media(max-width:992px){.mybook-detail-card{grid-template-columns:1fr}.mybook-detail-cover img{height:320px}}
+

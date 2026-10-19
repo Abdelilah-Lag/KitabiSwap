@@ -1,0 +1,41 @@
+.warehouse-layout{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:#f8fafc;
+
+}
+
+/* ===============================
+BODY
+=============================== */
+
+.warehouse-body{
+
+    flex:1;
+
+    display:flex;
+
+    overflow:hidden;
+
+}
+
+/* ===============================
+CONTENT
+=============================== */
+
+.warehouse-content{
+
+    flex:1;
+
+    padding:30px;
+
+    overflow-y:auto;
+
+    background:#f8fafc;
+
+}

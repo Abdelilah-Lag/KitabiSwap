@@ -1,0 +1,343 @@
+/* ==========================================================
+   MY BOOKS PAGE
+   Premium KitabiSwap UI
+========================================================== */
+
+/* ===============================
+   PAGE
+=============================== */
+
+.my-books-page{
+
+    min-height:100vh;
+
+    background:
+        linear-gradient(180deg,#F8FAFC 0%,#FFFFFF 100%);
+
+    padding:130px 0 90px;
+
+}
+
+.my-books-container{
+
+    width:92%;
+
+    max-width:1550px;
+
+    margin:auto;
+
+}
+
+/* ===============================
+   HERO
+=============================== */
+
+.my-books-hero{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    margin-bottom:45px;
+
+    padding:45px 50px;
+
+    background:
+        linear-gradient(135deg,#0F766E,#115E59);
+
+    border-radius:30px;
+
+    color:#FFFFFF;
+
+    overflow:hidden;
+
+    position:relative;
+
+    box-shadow:
+        0 18px 50px rgba(15,118,110,.22);
+
+}
+
+.my-books-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    right:-90px;
+
+    top:-90px;
+
+    width:280px;
+
+    height:280px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.my-books-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-70px;
+
+    bottom:-70px;
+
+    width:220px;
+
+    height:220px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.my-books-hero>*{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.my-books-hero h1{
+
+    font-size:44px;
+
+    font-weight:800;
+
+    margin-bottom:12px;
+
+    letter-spacing:-1px;
+
+}
+
+.my-books-hero p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    max-width:720px;
+
+    opacity:.96;
+
+}
+
+/* ===============================
+   GRID
+=============================== */
+
+.my-books-grid{
+
+    margin-top:35px;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fill,minmax(330px,1fr));
+
+    gap:30px;
+
+    align-items:stretch;
+
+}
+
+/* ===============================
+   EMPTY
+=============================== */
+
+.my-books-empty{
+
+    grid-column:1/-1;
+
+}
+
+/* ===============================
+   LOADING
+=============================== */
+
+.my-books-loading{
+
+    min-height:70vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:#0F766E;
+
+    background:#F8FAFC;
+
+}
+
+/* ===============================
+   ANIMATION
+=============================== */
+
+.my-books-grid>*{
+
+    animation:fadeBooks .45s ease;
+
+}
+
+@keyframes fadeBooks{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(18px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===============================
+   RESPONSIVE
+=============================== */
+
+@media(max-width:1200px){
+
+.my-books-grid{
+
+grid-template-columns:
+repeat(auto-fill,minmax(300px,1fr));
+
+gap:25px;
+
+}
+
+}
+
+@media(max-width:992px){
+
+.my-books-page{
+
+padding:115px 0 70px;
+
+}
+
+.my-books-hero{
+
+padding:35px;
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.my-books-hero h1{
+
+font-size:36px;
+
+}
+
+.my-books-hero p{
+
+font-size:17px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.my-books-container{
+
+width:94%;
+
+}
+
+.my-books-grid{
+
+grid-template-columns:1fr;
+
+gap:22px;
+
+}
+
+.my-books-hero{
+
+padding:28px;
+
+border-radius:24px;
+
+}
+
+.my-books-hero h1{
+
+font-size:30px;
+
+}
+
+.my-books-hero p{
+
+font-size:16px;
+
+line-height:1.7;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.my-books-page{
+
+padding:105px 0 60px;
+
+}
+
+.my-books-hero{
+
+padding:22px;
+
+border-radius:20px;
+
+}
+
+.my-books-hero h1{
+
+font-size:27px;
+
+}
+
+.my-books-hero p{
+
+font-size:15px;
+
+}
+
+.my-books-loading{
+
+font-size:26px;
+
+}
+
+}

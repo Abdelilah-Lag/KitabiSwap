@@ -1,0 +1,26 @@
+.inventory-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);display:flex;align-items:center;justify-content:center;z-index:50;}
+.inventory-modal{width:min(720px,95vw);background:#fff;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.25);overflow:hidden;}
+.inventory-modal-header{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px solid #eee;}
+.inventory-modal-close{border:none;background:#f3f3f3;border-radius:10px;padding:6px 10px;cursor:pointer;}
+.inventory-modal-body{padding:16px 18px;}
+.inventory-modal-summary{margin-bottom:14px;color:#222;}
+.inventory-modal-form{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+.inventory-modal-form label{display:flex;flex-direction:column;font-size:13px;gap:6px;}
+.inventory-modal-form input,.inventory-modal-form select{padding:10px 12px;border:1px solid #ddd;border-radius:10px;}
+.inventory-modal-checkbox{grid-column:1 / -1;flex-direction:row;align-items:center;gap:10px;}
+.inventory-modal-footer{display:flex;gap:10px;justify-content:flex-end;padding:16px 18px;border-top:1px solid #eee;}
+.inventory-modal-submit{background:#111;color:#fff;border:none;border-radius:10px;padding:10px 14px;cursor:pointer;}
+.inventory-modal-cancel{background:#eee;border:none;border-radius:10px;padding:10px 14px;cursor:pointer;}
+
+.inventory-book-search-results{margin-top:10px;display:grid;gap:10px;}
+.inventory-book-search-card{display:flex;gap:12px;align-items:flex-start;border:1px solid #eee;border-radius:12px;padding:12px;background:#fff;}
+.inventory-book-search-cover img{width:42px;height:58px;object-fit:cover;border-radius:6px;}
+.inventory-book-search-cover span{display:inline-flex;width:42px;height:58px;align-items:center;justify-content:center;background:#f6f6f6;border-radius:6px;color:#888;}
+.inventory-book-search-meta{flex:1;min-width:0;}
+.inventory-book-search-title{font-weight:700;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.inventory-book-search-author{color:#555;font-size:13px;}
+.inventory-book-search-isbn,.inventory-book-search-category{color:#777;font-size:12px;}
+.inventory-book-search-actions{display:flex;align-items:center;}
+.inventory-book-search-add{background:#111;color:#fff;border:none;border-radius:10px;padding:10px 12px;cursor:pointer;font-size:13px;}
+.inventory-book-search-empty{color:#666;text-align:center;padding:14px;border:1px dashed #eee;border-radius:12px;}
+

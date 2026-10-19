@@ -1,0 +1,687 @@
+/* ==========================================================
+   BUY BOOK PAGE
+   ROOT
+========================================================== */
+
+.buy-book-page {
+    min-height: calc(100vh - 160px);
+    padding: 40px 20px;
+    background: #f8fafc;
+}
+
+.buy-book-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.buy-book-container h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 32px;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+/* ==========================================================
+   LOADING
+========================================================== */
+
+.buy-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    font-size: 18px;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.buy-loading::before {
+    content: "";
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    border: 3px solid #e2e8f0;
+    border-top-color: #2563eb;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ==========================================================
+   CARD
+========================================================== */
+
+.buy-card {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(15, 23, 42, 0.06);
+    border: 1px solid #e5e7eb;
+    transition: box-shadow 0.3s ease;
+}
+
+.buy-card:hover {
+    box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+}
+
+.buy-card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 16px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ==========================================================
+   SELECTED BOOK
+========================================================== */
+
+.selected-book {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.selected-book img {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    flex-shrink: 0;
+    background: #f1f5f9;
+}
+
+.selected-book-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.selected-book-info h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.3;
+}
+
+.selected-book-info h3 + p {
+    margin: 0;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.selected-book-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.condition {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 12px;
+    border-radius: 999px;
+    background: #eff6ff;
+    color: #2563eb;
+    font-size: 11px;
+    font-weight: 600;
+    border: 1px solid #bfdbfe;
+    width: max-content;
+    margin-top: 2px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: 800;
+    color: #059669;
+    margin-top: 4px;
+}
+
+.selected-book-info .stock-info {
+    font-size: 13px;
+    color: #64748b;
+    margin-top: 2px;
+}
+
+/* ==========================================================
+   ADDRESS
+========================================================== */
+
+.buy-card p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.6;
+}
+
+.buy-card p strong {
+    color: #0f172a;
+}
+
+/* ==========================================================
+   DELIVERY
+========================================================== */
+
+.delivery-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.delivery-row:last-child {
+    border-bottom: none;
+}
+
+.delivery-row span {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.delivery-row strong {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+/* ==========================================================
+   PAYMENT
+========================================================== */
+
+.payment-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    background: #f8fafc;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-size: 14px;
+    font-weight: 500;
+    color: #334155;
+}
+
+.payment-option:last-child {
+    margin-bottom: 0;
+}
+
+.payment-option:hover {
+    background: #f1f5f9;
+    border-color: #e2e8f0;
+}
+
+.payment-option input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #2563eb;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.payment-option input[type="radio"]:checked + span {
+    color: #0f172a;
+    font-weight: 600;
+}
+
+.payment-option:has(input[type="radio"]:checked) {
+    background: #eff6ff;
+    border-color: #2563eb;
+}
+
+.wallet-balance {
+    color: #059669;
+    font-weight: 700;
+    margin-left: auto;
+}
+
+/* ==========================================================
+   QUANTITY
+========================================================== */
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px 0;
+}
+
+.quantity-selector button {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    background: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    color: #0f172a;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-selector button:hover:not(:disabled) {
+    background: #f1f5f9;
+    border-color: #2563eb;
+    transform: scale(1.05);
+}
+
+.quantity-selector button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.quantity-selector span {
+    font-size: 24px;
+    font-weight: 700;
+    color: #0f172a;
+    min-width: 40px;
+    text-align: center;
+}
+
+/* ==========================================================
+   ORDER SUMMARY
+========================================================== */
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.summary-row:last-of-type {
+    border-bottom: none;
+}
+
+.summary-row span {
+    font-size: 14px;
+    color: #64748b;
+}
+
+.summary-row strong {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.summary-row.total {
+    padding-top: 16px;
+    margin-top: 8px;
+    border-top: 2px solid #e2e8f0;
+}
+
+.summary-row.total span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.summary-row.total strong {
+    font-size: 22px;
+    font-weight: 800;
+    color: #059669;
+}
+
+/* ==========================================================
+   CONFIRM ORDER BUTTON
+========================================================== */
+
+.confirm-order-btn {
+    width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 16px rgba(37, 99, 235, 0.25);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.confirm-order-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    transition: left 0.5s ease;
+}
+
+.confirm-order-btn:hover:not(:disabled)::before {
+    left: 100%;
+}
+
+.confirm-order-btn:hover:not(:disabled) {
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.35);
+}
+
+.confirm-order-btn:active:not(:disabled) {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.confirm-order-btn:disabled {
+    background: #cbd5e1;
+    color: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* ==========================================================
+   RESPONSIVE - TABLET
+========================================================== */
+
+@media (max-width: 992px) {
+    .buy-book-page {
+        padding: 30px 16px;
+    }
+
+    .buy-book-container h1 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    .buy-card {
+        padding: 20px 24px;
+    }
+
+    .selected-book {
+        gap: 16px;
+    }
+
+    .selected-book img {
+        width: 100px;
+        height: 140px;
+    }
+
+    .selected-book-info h3 {
+        font-size: 18px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+}
+
+/* ==========================================================
+   RESPONSIVE - MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+    .buy-book-page {
+        padding: 20px 12px;
+        min-height: calc(100vh - 140px);
+    }
+
+    .buy-book-container h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .buy-card {
+        padding: 16px 18px;
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+
+    .buy-card h2 {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    .selected-book {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .selected-book img {
+        width: 140px;
+        height: 190px;
+    }
+
+    .selected-book-info {
+        align-items: center;
+    }
+
+    .selected-book-info h3 {
+        font-size: 18px;
+    }
+
+    .condition {
+        align-self: center;
+    }
+
+    .price {
+        font-size: 24px;
+    }
+
+    .delivery-row,
+    .summary-row {
+        padding: 6px 0;
+    }
+
+    .delivery-row span,
+    .summary-row span {
+        font-size: 13px;
+    }
+
+    .delivery-row strong,
+    .summary-row strong {
+        font-size: 14px;
+    }
+
+    .summary-row.total span {
+        font-size: 16px;
+    }
+
+    .summary-row.total strong {
+        font-size: 20px;
+    }
+
+    .payment-option {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    .quantity-selector {
+        justify-content: center;
+    }
+
+    .quantity-selector button {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .quantity-selector span {
+        font-size: 20px;
+        min-width: 32px;
+    }
+
+    .confirm-order-btn {
+        padding: 14px;
+        font-size: 14px;
+    }
+}
+
+/* ==========================================================
+   RESPONSIVE - SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+    .buy-book-page {
+        padding: 12px 8px;
+        min-height: calc(100vh - 120px);
+    }
+
+    .buy-book-container {
+        padding: 0;
+    }
+
+    .buy-book-container h1 {
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+
+    .buy-card {
+        padding: 14px 14px;
+        border-radius: 10px;
+        margin-bottom: 12px;
+    }
+
+    .buy-card h2 {
+        font-size: 14px;
+        margin-bottom: 10px;
+        gap: 6px;
+    }
+
+    .selected-book img {
+        width: 120px;
+        height: 160px;
+    }
+
+    .selected-book-info h3 {
+        font-size: 16px;
+    }
+
+    .selected-book-info p {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .condition {
+        font-size: 10px;
+        padding: 2px 10px;
+    }
+
+    .delivery-row span,
+    .summary-row span {
+        font-size: 12px;
+    }
+
+    .delivery-row strong,
+    .summary-row strong {
+        font-size: 13px;
+    }
+
+    .summary-row.total span {
+        font-size: 14px;
+    }
+
+    .summary-row.total strong {
+        font-size: 18px;
+    }
+
+    .payment-option {
+        padding: 8px 12px;
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    .payment-option input[type="radio"] {
+        width: 16px;
+        height: 16px;
+    }
+
+    .wallet-balance {
+        font-size: 12px;
+    }
+
+    .quantity-selector button {
+        width: 32px;
+        height: 32px;
+        font-size: 16px;
+    }
+
+    .quantity-selector span {
+        font-size: 18px;
+        min-width: 28px;
+    }
+
+    .confirm-order-btn {
+        padding: 12px;
+        font-size: 13px;
+        border-radius: 10px;
+        margin-top: 16px;
+    }
+}
+
+/* ==========================================================
+   RESPONSIVE - VERY SMALL
+========================================================== */
+
+@media (max-width: 360px) {
+    .buy-book-container h1 {
+        font-size: 18px;
+    }
+
+    .buy-card {
+        padding: 12px 10px;
+    }
+
+    .selected-book img {
+        width: 100px;
+        height: 140px;
+    }
+
+    .selected-book-info h3 {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .summary-row.total strong {
+        font-size: 16px;
+    }
+
+    .payment-option {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    .confirm-order-btn {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

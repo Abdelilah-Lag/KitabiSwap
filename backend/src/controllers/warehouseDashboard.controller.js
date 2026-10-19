@@ -1,0 +1,55 @@
+import {
+    getDashboardService,
+    getProfileService
+} from "../services/warehouseDashboard.service.js";
+
+export async function getDashboard(req, res) {
+
+    try {
+
+        const data = await getDashboardService(req.user.id);
+
+        res.json(data);
+
+    } catch (error) {
+
+        console.error(error);
+
+        res.status(400).json({
+
+            success: false,
+            message: error.message
+
+        });
+
+    }
+
+}
+
+export async function getProfile(req, res) {
+
+    try {
+
+        const profile = await getProfileService(req.user.id);
+
+        res.json({
+
+            success: true,
+            profile
+
+        });
+
+    } catch (error) {
+
+        console.error(error);
+
+        res.status(400).json({
+
+            success: false,
+            message: error.message
+
+        });
+
+    }
+
+}

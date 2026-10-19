@@ -1,0 +1,9 @@
+.inventory-row-cover{width:42px;height:58px;object-fit:cover;border-radius:6px;}
+.inventory-actions{display:flex;gap:8px;}
+.inventory-action-btn{padding:8px 10px;border:none;border-radius:8px;background:#111;color:#fff;cursor:pointer;font-size:12px;}
+.inventory-action-delete{background:#b00020;}
+.inventory-row-noimg{color:#999;}
+
+.inventory-lowstock-badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#b00020;color:#fff;font-size:12px;font-weight:700;white-space:nowrap;}
+
+

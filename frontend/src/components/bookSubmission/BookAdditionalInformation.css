@@ -1,0 +1,330 @@
+/* ==========================================================
+   BOOK ADDITIONAL INFORMATION
+   KitabiSwap Premium UI
+========================================================== */
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.submission-section{
+
+    width:100%;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:22px;
+
+    padding:32px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+    box-shadow:
+        0 8px 24px rgba(15,23,42,.05);
+
+    transition:.25s;
+
+}
+
+.submission-section:hover{
+
+    box-shadow:
+        0 14px 36px rgba(15,23,42,.08);
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.section-header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid #E2E8F0;
+
+}
+
+.section-header h2{
+
+    margin:0;
+
+    font-size:1.6rem;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+    line-height:1.2;
+
+}
+
+.section-header p{
+
+    margin:0;
+
+    color:#64748B;
+
+    font-size:.97rem;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   PLACEHOLDER
+========================================================== */
+
+.placeholder-box{
+
+    width:100%;
+
+    min-height:220px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    text-align:center;
+
+    background:#F8FAFC;
+
+    border:2px dashed #CBD5E1;
+
+    border-radius:18px;
+
+    padding:40px;
+
+}
+
+.placeholder-box h3{
+
+    margin:0;
+
+    font-size:1.3rem;
+
+    font-weight:600;
+
+    color:#1E293B;
+
+}
+
+.placeholder-box p{
+
+    margin:0;
+
+    max-width:550px;
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   NOT IMPLEMENTED MESSAGE
+========================================================== */
+
+.not-implemented{
+
+    text-align:center;
+
+    color:#94A3B8;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+    padding:20px;
+
+}
+
+/* ==========================================================
+   INFO CARD
+========================================================== */
+
+.info-card{
+
+    background:#EFF6FF;
+
+    border:1px solid #BFDBFE;
+
+    border-radius:16px;
+
+    padding:18px 22px;
+
+    color:#1E40AF;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   WARNING CARD
+========================================================== */
+
+.warning-card{
+
+    background:#FEFCE8;
+
+    border:1px solid #FDE68A;
+
+    border-radius:16px;
+
+    padding:18px 22px;
+
+    color:#854D0E;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   SUCCESS CARD
+========================================================== */
+
+.success-card{
+
+    background:#ECFDF5;
+
+    border:1px solid #A7F3D0;
+
+    border-radius:16px;
+
+    padding:18px 22px;
+
+    color:#065F46;
+
+    font-size:.95rem;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   EMPTY STATE
+========================================================== */
+
+.empty-state{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:16px;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+.empty-state svg{
+
+    font-size:3rem;
+
+    color:#CBD5E1;
+
+}
+
+.empty-state h4{
+
+    margin:0;
+
+    font-size:1.2rem;
+
+    color:#334155;
+
+}
+
+.empty-state p{
+
+    margin:0;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    max-width:500px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:768px){
+
+    .submission-section{
+
+        padding:24px;
+
+        border-radius:18px;
+
+    }
+
+    .section-header h2{
+
+        font-size:1.35rem;
+
+    }
+
+    .placeholder-box{
+
+        padding:30px 20px;
+
+        min-height:180px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .submission-section{
+
+        padding:20px;
+
+    }
+
+    .section-header h2{
+
+        font-size:1.2rem;
+
+    }
+
+    .placeholder-box{
+
+        padding:24px 16px;
+
+    }
+
+}

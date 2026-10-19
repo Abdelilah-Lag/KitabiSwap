@@ -1,0 +1,225 @@
+/* ==========================================
+   BOOK INFO
+   KitabiSwap UI
+========================================== */
+
+.book-info {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    padding: 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    box-shadow: 0 15px 40px rgba(15, 23, 42, .06);
+    transition: .35s ease;
+}
+
+.book-info:hover {
+    box-shadow: 0 22px 55px rgba(15, 157, 148, .12);
+    border-color: rgba(15, 157, 148, .18);
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.book-info-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.book-type {
+    width: fit-content;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(15, 157, 148, .12);
+    color: #0f9d94;
+    font-size: .82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .6px;
+}
+
+.book-name {
+    margin: 0;
+    font-size: 2.15rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.2;
+}
+
+.book-author {
+    margin: -6px 0 0;
+    font-size: 1.1rem;
+    color: #64748b;
+    font-style: italic;
+}
+
+/* ==========================================
+   META
+========================================== */
+
+.book-meta {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.meta-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 0;
+    border-bottom: 1px solid #edf2f7;
+}
+
+.meta-row:last-child {
+    border-bottom: none;
+}
+
+.meta-label {
+    color: #64748b;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.meta-value {
+    color: #0f172a;
+    font-weight: 700;
+    text-align: right;
+    word-break: break-word;
+}
+
+/* ==========================================
+   EXTRA INFO
+========================================== */
+
+.book-extra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 22px;
+    border-radius: 16px;
+    background: linear-gradient(135deg,
+            rgba(15, 157, 148, .06),
+            rgba(245, 124, 0, .05));
+    border: 1px solid rgba(15, 157, 148, .08);
+}
+
+.book-extra span {
+    color: #475569;
+    font-weight: 600;
+}
+
+.book-extra strong {
+    color: #0f172a;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.old-price {
+    color: #ef4444 !important;
+    text-decoration: line-through;
+}
+
+/* ==========================================
+   ACTION BUTTON
+========================================== */
+
+.book-action {
+    margin-top: 8px;
+    width: 100%;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(135deg, #0f9d94, #14b8a6);
+    box-shadow: 0 12px 30px rgba(15, 157, 148, .25);
+    transition: all .3s ease;
+}
+
+.book-action:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #f57c00, #ff9800);
+    box-shadow: 0 16px 35px rgba(245, 124, 0, .28);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:992px) {
+
+    .book-info {
+        padding: 30px;
+    }
+
+    .book-name {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    .book-info {
+        padding: 24px;
+        gap: 20px;
+    }
+
+    .book-name {
+        font-size: 1.6rem;
+    }
+
+    .book-author {
+        font-size: 1rem;
+    }
+
+    .meta-row,
+    .book-extra {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .meta-value {
+        text-align: left;
+    }
+
+    .book-action {
+        height: 54px;
+    }
+
+}
+
+@media (max-width:480px) {
+
+    .book-info {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .book-name {
+        font-size: 1.4rem;
+    }
+
+    .book-type {
+        font-size: .75rem;
+        padding: 7px 14px;
+    }
+
+    .book-extra {
+        padding: 16px;
+    }
+
+}

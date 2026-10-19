@@ -1,0 +1,55 @@
+{
+  "name": "kitabiswap-backend",
+  "version": "1.0.0",
+  "description": "KitabiSwap Backend API",
+  "private": true,
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "prisma:pull": "prisma db pull",
+    "prisma:generate": "prisma generate",
+    "postinstall": "prisma generate"
+  },
+  "keywords": [
+    "kitabiswap",
+    "express",
+    "nodejs",
+    "mysql",
+    "prisma",
+    "cloudinary",
+    "react"
+  ],
+  "author": "Abdelilah Lagribi",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.19.3",
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^1.41.3",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.21",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mime-types": "^3.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^2.2.0",
+    "multer-storage-cloudinary": "^4.0.0",
+    "nodemailer": "^7.0.5",
+    "socket.io": "^4.8.1",
+    "uuid": "^11.1.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "prisma": "^6.19.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

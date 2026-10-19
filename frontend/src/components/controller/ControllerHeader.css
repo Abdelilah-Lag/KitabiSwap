@@ -1,0 +1,56 @@
+.controller-header{
+    height:80px;
+    background:white;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 30px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.controller-header-left{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.controller-logo{
+    width:46px;
+    height:46px;
+    object-fit:contain;
+}
+
+.controller-header h2{
+    font-size:20px;
+    margin:0;
+    color:#111827;
+}
+
+.controller-header span{
+    display:block;
+    margin-top:3px;
+    color:#6b7280;
+}
+
+.controller-header-right{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.controller-notification{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:10px;
+    background:#eff6ff;
+    cursor:pointer;
+}
+
+.controller-avatar{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    object-fit:cover;
+}
+

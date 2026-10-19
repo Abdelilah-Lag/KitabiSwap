@@ -1,0 +1,418 @@
+/* ==========================================================
+   PAGE
+========================================================== */
+
+
+.wallet-transactions-page {
+
+    width: 100%;
+
+    padding: 25px;
+
+}
+
+
+
+
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+
+.wallet-transactions-header {
+
+    margin-bottom: 25px;
+
+}
+
+
+
+.wallet-transactions-header h2 {
+
+    margin: 0;
+
+    font-size: 26px;
+
+}
+
+
+
+.wallet-transactions-header p {
+
+    margin-top: 8px;
+
+    color: #666;
+
+}
+
+
+
+
+
+/* ==========================================================
+   TOOLBAR
+========================================================== */
+
+
+.wallet-transactions-toolbar {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 25px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+.wallet-transactions-toolbar input,
+
+.wallet-transactions-toolbar select {
+
+
+    padding: 10px 12px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+
+}
+
+
+
+.wallet-transactions-toolbar input[type="text"] {
+
+    width: 300px;
+
+}
+
+
+
+
+.wallet-transactions-toolbar button {
+
+
+    background: #111827;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 18px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+
+}
+
+
+
+.wallet-transactions-toolbar button:hover {
+
+
+    opacity: 0.9;
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+
+.wallet-transactions-table-wrapper {
+
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow-x: auto;
+
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+
+
+}
+
+
+
+.wallet-transactions-table {
+
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+
+}
+
+
+
+.wallet-transactions-table th {
+
+
+    background: #f8fafc;
+
+    padding: 14px;
+
+    text-align: left;
+
+    font-size: 14px;
+
+
+}
+
+
+
+.wallet-transactions-table td {
+
+
+    padding: 14px;
+
+    border-top: 1px solid #eee;
+
+    font-size: 14px;
+
+
+}
+
+
+
+.wallet-transactions-table tr:hover {
+
+
+    background: #f9fafb;
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   TRANSACTION TYPE
+========================================================== */
+
+
+.transaction-type {
+
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    text-transform: capitalize;
+
+
+}
+
+
+
+
+
+.transaction-type.recharge {
+
+
+    background: #dcfce7;
+
+    color: #166534;
+
+
+}
+
+
+
+
+.transaction-type.purchase {
+
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+
+}
+
+
+
+
+
+.transaction-type.exchange {
+
+
+    background: #dbeafe;
+
+    color: #1e40af;
+
+
+}
+
+
+
+
+
+.transaction-type.withdrawal {
+
+
+    background: #fef3c7;
+
+    color: #92400e;
+
+
+}
+
+
+
+
+
+.transaction-type.fee {
+
+
+    background: #e5e7eb;
+
+    color: #374151;
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   AMOUNT
+========================================================== */
+
+
+.wallet-transactions-table td strong {
+
+
+    font-weight: 700;
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   PAGINATION
+========================================================== */
+
+
+.wallet-transactions-pagination {
+
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+
+}
+
+
+
+
+.wallet-transactions-pagination button {
+
+
+    padding: 9px 15px;
+
+    border-radius: 7px;
+
+    border: none;
+
+    cursor: pointer;
+
+    background: #2563eb;
+
+    color: white;
+
+
+}
+
+
+
+.wallet-transactions-pagination button:disabled {
+
+
+    opacity: 0.5;
+
+    cursor: not-allowed;
+
+
+}
+
+
+
+
+.wallet-transactions-pagination select {
+
+
+    padding: 8px;
+
+    border-radius: 7px;
+
+    border: 1px solid #ddd;
+
+
+}
+
+
+
+
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+
+@media(max-width:900px){
+
+
+    .wallet-transactions-toolbar {
+
+
+        flex-direction: column;
+
+
+    }
+
+
+
+    .wallet-transactions-toolbar input[type="text"] {
+
+
+        width:100%;
+
+
+    }
+
+
+
+}

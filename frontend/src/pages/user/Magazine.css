@@ -1,0 +1,300 @@
+/* ==========================================
+   PAGE
+========================================== */
+
+.magazine-page{
+
+    min-height:100vh;
+
+    background:#f5f7fb;
+
+    padding:40px 0;
+
+}
+
+.magazine-container{
+
+    width:95%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.magazine-header{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.magazine-header h1{
+
+    font-size:34px;
+
+    color:#1f2937;
+
+    margin-bottom:10px;
+
+    font-weight:700;
+
+}
+
+.magazine-header p{
+
+    color:#6b7280;
+
+    font-size:16px;
+
+}
+
+/* ==========================================
+   SEARCH
+========================================== */
+
+.magazine-search{
+
+    margin-bottom:20px;
+
+}
+
+.magazine-search input{
+
+    width:100%;
+
+    padding:15px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.2s;
+
+}
+
+.magazine-search input:focus{
+
+    border-color:#2563eb;
+
+}
+
+/* ==========================================
+   FILTERS
+========================================== */
+
+.magazine-filters{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(170px,1fr));
+
+    gap:15px;
+
+    margin-bottom:30px;
+
+}
+
+.magazine-filters select,
+
+.magazine-filters input{
+
+    width:100%;
+
+    padding:13px;
+
+    border-radius:10px;
+
+    border:1px solid #d1d5db;
+
+    outline:none;
+
+    background:#fff;
+
+    font-size:14px;
+
+    transition:.2s;
+
+}
+
+.magazine-filters select:focus,
+
+.magazine-filters input:focus{
+
+    border-color:#2563eb;
+
+}
+
+/* ==========================================
+   RESULT
+========================================== */
+
+.magazine-result{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+.magazine-result span{
+
+    color:#6b7280;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.magazine-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fill,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+/* ==========================================
+   EMPTY
+========================================== */
+
+.magazine-empty{
+
+    text-align:center;
+
+    background:#fff;
+
+    padding:60px;
+
+    border-radius:14px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+}
+
+.magazine-empty h3{
+
+    color:#374151;
+
+    margin-bottom:10px;
+
+}
+
+.magazine-empty p{
+
+    color:#9ca3af;
+
+}
+
+/* ==========================================
+   LOADING
+========================================== */
+
+.magazine-loading{
+
+    min-height:60vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+    .magazine-grid{
+
+        grid-template-columns:
+        repeat(auto-fill,minmax(240px,1fr));
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .magazine-page{
+
+        padding:20px 0;
+
+    }
+
+    .magazine-header h1{
+
+        font-size:28px;
+
+    }
+
+    .magazine-filters{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .magazine-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+.magazine-header-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.create-order-btn{
+    padding:12px 22px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:#fff;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.2s;
+}
+
+.create-order-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}

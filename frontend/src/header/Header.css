@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   HEADER
+=========================== */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:85px;
+
+    background:#FFFFFF;
+
+    border-bottom:1px solid #E2E8F0;
+
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+
+}
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.header-container{
+
+    max-width:1500px;
+
+    width:100%;
+
+    height:100%;
+
+    margin:auto;
+
+    padding:0 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    flex-shrink:0;
+
+}
+
+.logo img{
+
+    width:56px;
+
+    height:56px;
+
+    object-fit:contain;
+
+}
+
+.logo span{
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#0F766E;
+
+    letter-spacing:-0.5px;
+
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+.navbar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:38px;
+
+    flex:1;
+
+    justify-content:center;
+
+}
+
+.navbar a{
+
+    position:relative;
+
+    color:#334155;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+    transition:all .25s ease;
+
+    padding:6px 0;
+
+}
+
+.navbar a:hover{
+
+    color:#0F766E;
+
+}
+
+/* Animation soulignement */
+
+.navbar a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0;
+
+    height:3px;
+
+    background:#F97316;
+
+    border-radius:30px;
+
+    transition:.3s;
+
+}
+
+.navbar a:hover::after{
+
+    width:100%;
+
+}
+
+/* ===========================
+   ACTIONS
+=========================== */
+
+.header-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    flex-shrink:0;
+
+}
+
+/* ===========================
+   LANGUE
+=========================== */
+
+.language-select{
+
+    width:125px;
+
+    height:38px;
+
+    padding:0 14px;
+
+    border:1px solid #D1D5DB;
+
+    border-radius:999px;
+
+    background:#F8FAFC;
+
+    color:#334155;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    outline:none;
+
+    transition:all .25s ease;
+
+}
+
+.language-select:hover{
+
+    border-color:#14B8A6;
+
+    background:#ECFDF5;
+
+}
+
+.language-select:focus{
+
+    border-color:#0F766E;
+
+}
+
+/* ===========================
+   LOGIN
+=========================== */
+
+.login-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:120px;
+
+    height:42px;
+
+    border:2px solid #0F766E;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:#0F766E;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    transition:.25s;
+
+}
+
+.login-btn:hover{
+
+    background:#0F766E;
+
+    color:#FFFFFF;
+
+}
+
+/* ===========================
+   REGISTER
+=========================== */
+
+.register-btn{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:165px;
+
+    height:42px;
+
+    background:#F97316;
+
+    color:#FFFFFF;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    transition:.25s;
+
+    box-shadow:0 8px 22px rgba(249,115,22,.25);
+
+}
+
+.register-btn:hover{
+
+    transform:translateY(-2px);
+
+    background:#EA580C;
+
+    box-shadow:0 14px 30px rgba(249,115,22,.35);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+    .navbar{
+
+        gap:24px;
+
+    }
+
+    .logo span{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:900px){
+
+    .navbar{
+
+        display:none;
+
+    }
+
+    .header-container{
+
+        padding:0 20px;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .login-btn{
+
+        display:none;
+
+    }
+
+    .register-btn{
+
+        width:140px;
+
+    }
+
+}

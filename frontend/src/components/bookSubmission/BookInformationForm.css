@@ -1,0 +1,384 @@
+/* ==========================================================
+   BOOK INFORMATION FORM
+   PREMIUM COMPLETE FORM UI
+========================================================== */
+
+
+/* ==========================================
+   ROOT SECTION
+========================================== */
+
+.submission-section{
+
+    width:100%;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:22px;
+
+    padding:32px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+    box-shadow:
+        0 10px 30px rgba(15,23,42,0.06);
+
+}
+
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.section-header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid #E5E7EB;
+
+}
+
+
+
+.section-header h2{
+
+    margin:0;
+
+    font-size:24px;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+
+
+.section-header p{
+
+    margin:0;
+
+    font-size:15px;
+
+    color:#64748B;
+
+    line-height:1.6;
+
+}
+
+
+
+/* ==========================================
+   FORM GRID
+========================================== */
+
+.submission-form{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(2,1fr);
+
+    gap:22px;
+
+}
+
+
+
+/* ==========================================
+   FORM GROUP
+========================================== */
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+
+
+.form-group.full-width{
+
+    grid-column:
+
+        1 / -1;
+
+}
+
+
+
+/* ==========================================
+   LABEL
+========================================== */
+
+.form-group label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+
+
+/* ==========================================
+   INPUT + SELECT + TEXTAREA
+========================================== */
+
+.form-group input,
+
+.form-group select,
+
+.form-group textarea{
+
+    width:100%;
+
+    border-radius:14px;
+
+    border:1px solid #CBD5E1;
+
+    background:#FFFFFF;
+
+    color:#0F172A;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.25s ease;
+
+}
+
+
+
+/* INPUT */
+
+.form-group input,
+
+.form-group select{
+
+    height:48px;
+
+    padding:0 15px;
+
+}
+
+
+
+/* TEXTAREA */
+
+.form-group textarea{
+
+    padding:14px 15px;
+
+    resize:vertical;
+
+    min-height:110px;
+
+    line-height:1.5;
+
+}
+
+
+
+/* PLACEHOLDER */
+
+.form-group input::placeholder,
+
+.form-group textarea::placeholder{
+
+    color:#94A3B8;
+
+}
+
+
+
+/* HOVER */
+
+.form-group input:hover,
+
+.form-group select:hover,
+
+.form-group textarea:hover{
+
+    border-color:#94A3B8;
+
+}
+
+
+
+/* FOCUS */
+
+.form-group input:focus,
+
+.form-group select:focus,
+
+.form-group textarea:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:
+
+        0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+
+
+/* ==========================================
+   SELECT STYLE
+========================================== */
+
+.form-group select{
+
+    cursor:pointer;
+
+}
+
+
+
+/* ==========================================
+   HELP TEXT
+========================================== */
+
+.form-group small{
+
+    font-size:13px;
+
+    color:#64748B;
+
+    line-height:1.5;
+
+}
+
+
+
+/* ==========================================
+   REQUIRED STAR
+========================================== */
+
+.form-group label::first-letter{
+
+    color:inherit;
+
+}
+
+
+
+/* ==========================================
+   SPECIAL TEXTAREAS
+========================================== */
+
+.form-group.full-width textarea{
+
+    min-height:140px;
+
+}
+
+
+
+/* ==========================================
+   NUMBER INPUT
+========================================== */
+
+.form-group input[type="number"]{
+
+    appearance:textfield;
+
+}
+
+
+
+/* ==========================================
+   RESPONSIVE TABLET
+========================================== */
+
+@media(max-width:900px){
+
+
+    .submission-form{
+
+        grid-template-columns:
+
+            1fr;
+
+    }
+
+
+}
+
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+
+    .submission-section{
+
+        padding:18px;
+
+        border-radius:18px;
+
+    }
+
+
+
+    .section-header h2{
+
+        font-size:20px;
+
+    }
+
+
+
+    .section-header p{
+
+        font-size:14px;
+
+    }
+
+
+
+    .form-group input,
+
+    .form-group select{
+
+        height:45px;
+
+        font-size:14px;
+
+    }
+
+
+
+    .form-group textarea{
+
+        font-size:14px;
+
+    }
+
+
+}

@@ -1,0 +1,238 @@
+/* ==========================================
+   BOOK DETAILS
+========================================== */
+
+.book-details-page{
+    min-height:100vh;
+    background:#f5f7fb;
+    padding:40px 0;
+}
+
+.book-details-container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.book-details-card{
+    display:grid;
+    grid-template-columns:380px 1fr;
+    gap:40px;
+    background:#fff;
+    border-radius:18px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.book-details-image{
+
+    width:100%;
+}
+
+.book-details-image img{
+
+    width:100%;
+    border-radius:14px;
+    object-fit:cover;
+    box-shadow:0 10px 20px rgba(0,0,0,.12);
+}
+
+/* ==========================================
+   INFO
+========================================== */
+
+.book-details-info h1{
+
+    margin:0;
+    font-size:32px;
+    color:#222;
+}
+
+.book-author{
+
+    margin-top:8px;
+    font-size:18px;
+    color:#777;
+}
+
+.book-price{
+
+    margin-top:25px;
+    font-size:34px;
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+.book-old-price{
+
+    margin-left:12px;
+    color:#999;
+    text-decoration:line-through;
+    font-size:22px;
+}
+
+.book-stock{
+
+    margin-top:20px;
+    display:inline-block;
+    padding:8px 16px;
+    background:#eef6ff;
+    border-radius:8px;
+    color:#0d6efd;
+    font-weight:600;
+}
+
+.book-seller{
+
+    margin-top:20px;
+    display:inline-block;
+    background:#eef8ef;
+    color:#198754;
+    padding:8px 15px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.book-description{
+
+    margin-top:25px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* ==========================================
+   TABLE
+========================================== */
+
+.book-specs{
+
+    width:100%;
+    margin-top:35px;
+    border-collapse:collapse;
+}
+
+.book-specs tr{
+
+    border-bottom:1px solid #ececec;
+}
+
+.book-specs td{
+
+    padding:14px 10px;
+}
+
+.book-specs td:first-child{
+
+    width:220px;
+    font-weight:700;
+    color:#444;
+}
+
+.book-specs td:last-child{
+
+    color:#666;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.book-actions{
+
+    margin-top:40px;
+    display:flex;
+    gap:15px;
+}
+
+.book-actions button{
+
+    padding:14px 28px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.25s;
+}
+
+.btn-buy{
+
+    background:#0d6efd;
+    color:#fff;
+}
+
+.btn-buy:hover{
+
+    background:#0b5ed7;
+}
+
+.btn-back{
+
+    background:#e9ecef;
+}
+
+.btn-back:hover{
+
+    background:#d9d9d9;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1000px){
+
+.book-details-card{
+
+    grid-template-columns:1fr;
+}
+
+.book-details-image{
+
+    max-width:350px;
+    margin:auto;
+}
+
+}
+
+@media(max-width:650px){
+
+.book-details-card{
+
+    padding:20px;
+}
+
+.book-details-info h1{
+
+    font-size:26px;
+}
+
+.book-price{
+
+    font-size:28px;
+}
+
+.book-actions{
+
+    flex-direction:column;
+}
+
+.book-actions button{
+
+    width:100%;
+}
+
+.book-specs td:first-child{
+
+    width:150px;
+}
+
+}

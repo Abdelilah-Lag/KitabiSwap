@@ -1,0 +1,6 @@
+.inventory-table-wrapper{background:#fff;border:1px solid #eee;border-radius:12px;overflow:hidden;}
+.inventory-table{width:100%;border-collapse:collapse;}
+.inventory-table th,.inventory-table td{padding:12px;border-bottom:1px solid #f2f2f2;font-size:13px;}
+.inventory-table th{background:#fafafa;text-align:left;}
+.inventory-empty{text-align:center;color:#666;padding:18px;}
+

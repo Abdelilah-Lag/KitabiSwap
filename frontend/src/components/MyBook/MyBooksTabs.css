@@ -1,0 +1,277 @@
+/* ==========================================================
+   MY BOOKS TABS
+   Premium KitabiSwap
+========================================================== */
+
+.my-books-tabs{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin:40px 0;
+
+    padding:10px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:24px;
+
+    box-shadow:
+        0 10px 35px rgba(15,23,42,.08);
+
+}
+
+/* ===================================
+   BUTTON
+=================================== */
+
+.tab-button{
+
+    flex:1;
+
+    height:74px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:14px;
+
+    border:none;
+
+    border-radius:18px;
+
+    background:transparent;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    color:#475569;
+
+    font-size:16px;
+
+    font-weight:700;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* ============================= */
+
+.tab-button::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            rgba(15,118,110,.05),
+
+            rgba(15,118,110,.01)
+
+        );
+
+    opacity:0;
+
+    transition:.35s;
+
+}
+
+/* ============================= */
+
+.tab-button:hover{
+
+    color:#0F766E;
+
+    transform:translateY(-2px);
+
+}
+
+.tab-button:hover::before{
+
+    opacity:1;
+
+}
+
+/* ============================= */
+
+.tab-button.active{
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #0F766E,
+
+            #115E59
+
+        );
+
+    color:#FFFFFF;
+
+    box-shadow:
+
+        0 14px 35px rgba(15,118,110,.30);
+
+}
+
+.tab-button.active::before{
+
+    display:none;
+
+}
+
+/* ===================================
+   ICON
+=================================== */
+
+.tab-icon{
+
+    font-size:24px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+/* ===================================
+   COUNT
+=================================== */
+
+.tab-count{
+
+    min-width:34px;
+
+    height:34px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:999px;
+
+    background:#E2E8F0;
+
+    color:#0F172A;
+
+    font-size:14px;
+
+    font-weight:800;
+
+    transition:.3s;
+
+}
+
+.tab-button.active .tab-count{
+
+    background:#FFFFFF;
+
+    color:#0F766E;
+
+}
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:992px){
+
+.my-books-tabs{
+
+flex-direction:column;
+
+padding:15px;
+
+gap:15px;
+
+}
+
+.tab-button{
+
+width:100%;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.my-books-tabs{
+
+margin:30px 0;
+
+border-radius:20px;
+
+}
+
+.tab-button{
+
+height:68px;
+
+font-size:15px;
+
+gap:12px;
+
+}
+
+.tab-icon{
+
+font-size:22px;
+
+}
+
+.tab-count{
+
+width:30px;
+
+height:30px;
+
+font-size:13px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.tab-button{
+
+font-size:14px;
+
+padding:0 15px;
+
+justify-content:flex-start;
+
+}
+
+.tab-icon{
+
+font-size:20px;
+
+}
+
+}

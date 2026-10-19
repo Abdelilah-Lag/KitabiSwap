@@ -1,0 +1,215 @@
+/* src/book/ExchangeSection.css */
+
+.exchange-section{
+
+    width:100%;
+
+    padding:90px 0;
+
+    background:#F8FAFC;
+
+}
+
+.exchange-container{
+
+    max-width:1500px;
+
+    margin:auto;
+
+    padding:0 40px;
+
+}
+
+.exchange-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:45px;
+
+}
+
+.exchange-header h2{
+
+    font-size:40px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+}
+
+.exchange-header p{
+
+    margin-top:12px;
+
+    color:#64748B;
+
+    font-size:18px;
+
+}
+
+.exchange-view-all{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:170px;
+
+    height:52px;
+
+    border-radius:15px;
+
+    background:#0F766E;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.exchange-view-all:hover{
+
+    background:#115E59;
+
+}
+
+/* ----------------------------- */
+
+.swiper{
+
+    padding:15px 5px 60px;
+
+}
+
+.swiper-slide{
+
+    height:auto;
+
+    display:flex;
+
+}
+
+/* ----------------------------- */
+
+.swiper-button-prev,
+
+.swiper-button-next{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    color:#0F766E;
+
+    transition:.3s;
+
+}
+
+.swiper-button-prev:hover,
+
+.swiper-button-next:hover{
+
+    background:#0F766E;
+
+    color:white;
+
+}
+
+.swiper-button-prev::after,
+
+.swiper-button-next::after{
+
+    font-size:20px;
+
+    font-weight:700;
+
+}
+
+/* ----------------------------- */
+
+.swiper-button-disabled{
+
+    opacity:.35;
+
+}
+
+/* ----------------------------- */
+
+@media(max-width:992px){
+
+.exchange-header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:20px;
+
+}
+
+.exchange-view-all{
+
+width:180px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.exchange-section{
+
+padding:70px 0;
+
+}
+
+.exchange-container{
+
+padding:0 20px;
+
+}
+
+.exchange-header h2{
+
+font-size:32px;
+
+}
+
+.exchange-header p{
+
+font-size:16px;
+
+}
+
+.swiper{
+
+padding-bottom:50px;
+
+}
+
+.swiper-button-prev,
+
+.swiper-button-next{
+
+display:none;
+
+}
+
+}

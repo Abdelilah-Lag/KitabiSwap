@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="teal" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#14B8A6"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F97316"/>
+      <stop offset="100%" stop-color="#FB923C"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="#ffffff"/>
+  <circle cx="128" cy="128" r="100" fill="none" stroke="url(#teal)" stroke-width="10"
+          stroke-dasharray="500 120" stroke-linecap="round"/>
+  <circle cx="128" cy="128" r="100" fill="none" stroke="url(#orange)" stroke-width="10"
+          stroke-dasharray="120 500" stroke-dashoffset="-90" stroke-linecap="round"/>
+
+  <path d="M58 76 Q86 62 114 76 V172 Q86 158 58 172 Z" fill="url(#teal)"/>
+  <path d="M198 76 Q170 62 142 76 V172 Q170 158 198 172 Z" fill="url(#orange)"/>
+
+  <path d="M109 112 H150 l-8 -8 m8 8 l-8 8" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M147 144 H106 l8 -8 m-8 8 l8 8" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

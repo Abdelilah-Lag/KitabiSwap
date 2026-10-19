@@ -1,0 +1,55 @@
+.dashboard-charts{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:30px;
+
+}
+
+.dashboard-chart-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    border:1px solid #ececec;
+
+}
+
+.dashboard-chart-header{
+
+    margin-bottom:20px;
+
+}
+
+.dashboard-chart-header h3{
+
+    font-size:20px;
+
+    color:#222;
+
+}
+
+.dashboard-chart{
+
+    position:relative;
+
+    height:340px;
+
+}
+
+@media(max-width:1000px){
+
+    .dashboard-charts{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

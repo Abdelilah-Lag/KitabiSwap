@@ -1,0 +1,12 @@
+.inventory-book-search-results{margin-top:10px;display:grid;gap:10px;}
+.inventory-book-search-card{display:flex;gap:12px;align-items:flex-start;border:1px solid #eee;border-radius:12px;padding:12px;background:#fff;}
+.inventory-book-search-cover img{width:42px;height:58px;object-fit:cover;border-radius:6px;}
+.inventory-book-search-cover span{display:inline-flex;width:42px;height:58px;align-items:center;justify-content:center;background:#f6f6f6;border-radius:6px;color:#888;}
+.inventory-book-search-meta{flex:1;min-width:0;}
+.inventory-book-search-title{font-weight:700;margin-bottom:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.inventory-book-search-author{color:#555;font-size:13px;}
+.inventory-book-search-isbn,.inventory-book-search-category{color:#777;font-size:12px;}
+.inventory-book-search-actions{display:flex;align-items:center;}
+.inventory-book-search-add{background:#111;color:#fff;border:none;border-radius:10px;padding:10px 12px;cursor:pointer;font-size:13px;}
+.inventory-book-search-empty{color:#666;text-align:center;padding:14px;border:1px dashed #eee;border-radius:12px;}
+

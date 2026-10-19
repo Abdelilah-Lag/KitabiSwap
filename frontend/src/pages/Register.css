@@ -1,0 +1,261 @@
+/* ===========================
+   Register Page
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.register-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    background: linear-gradient(135deg, #f5f7fa, #e8f0fe);
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===========================
+   Back Home
+=========================== */
+
+.back-home {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.back-home:hover {
+    color: #1d4ed8;
+    transform: translateX(-4px);
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.register-container {
+    width: 100%;
+    max-width: 520px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+    animation: fadeIn .5s ease;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.register-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-header h1 {
+    color: #2563eb;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.register-header h2 {
+    color: #222;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.register-header p {
+    color: #666;
+    font-size: 15px;
+}
+
+/* ===========================
+   Messages
+=========================== */
+
+.register-error {
+    background: #ffe5e5;
+    color: #d90429;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.register-success {
+    background: #e6ffed;
+    color: #15803d;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+/* ===========================
+   Form
+=========================== */
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 14px 18px 14px 48px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    background: #fafafa;
+    transition: .3s;
+}
+
+.input-group input:focus {
+    border-color: #2563eb;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(37,99,235,.15);
+}
+
+/* ===========================
+   Button
+=========================== */
+
+.register-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.register-button:hover:not(:disabled) {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.register-button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+/* ===========================
+   Login Link
+=========================== */
+
+.login-link {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.login-link p {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.login-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* ===========================
+   Animation
+=========================== */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 768px) {
+
+    .register-page {
+        padding: 20px;
+    }
+
+    .register-container {
+        padding: 30px 25px;
+    }
+
+    .back-home {
+        position: static;
+        margin-bottom: 20px;
+        align-self: flex-start;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .register-container {
+        padding: 25px 20px;
+    }
+
+    .register-header h1 {
+        font-size: 28px;
+    }
+
+    .register-header h2 {
+        font-size: 22px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+    }
+
+    .register-button {
+        font-size: 15px;
+    }
+
+}

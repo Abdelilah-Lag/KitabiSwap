@@ -1,0 +1,118 @@
+.approve-order-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(17, 24, 39, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+    padding: 20px;
+}
+
+.approve-order-modal {
+    width: 100%;
+    max-width: 460px;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 28px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+    animation: approveOrderFadeIn 0.2s ease;
+}
+
+.approve-order-modal h2 {
+    margin: 0 0 14px;
+    color: #111827;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.approve-order-modal p {
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.approve-order-error {
+    margin-top: 18px;
+    padding: 12px 14px;
+    border-radius: 8px;
+    background: #fef2f2;
+    color: #dc2626;
+    border: 1px solid #fecaca;
+    font-size: 14px;
+}
+
+.approve-order-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.approve-order-cancel,
+.approve-order-confirm {
+    min-width: 120px;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.approve-order-cancel {
+    background: #e5e7eb;
+    color: #374151;
+}
+
+.approve-order-cancel:hover:not(:disabled) {
+    background: #d1d5db;
+}
+
+.approve-order-confirm {
+    background: #16a34a;
+    color: #ffffff;
+}
+
+.approve-order-confirm:hover:not(:disabled) {
+    background: #15803d;
+}
+
+.approve-order-cancel:disabled,
+.approve-order-confirm:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@keyframes approveOrderFadeIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .approve-order-modal {
+        padding: 22px;
+    }
+
+    .approve-order-actions {
+        flex-direction: column;
+    }
+
+    .approve-order-cancel,
+    .approve-order-confirm {
+        width: 100%;
+    }
+
+}

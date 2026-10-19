@@ -1,0 +1,631 @@
+/* ==========================================================
+   EXPLORE PAGE
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.explore-container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.explore-hero{
+
+    background:linear-gradient(135deg,#f8fbff 0%,#eef5ff 100%);
+
+    padding:90px 0;
+
+}
+
+.explore-hero .explore-container{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+.explore-left{
+
+    flex:1;
+
+}
+
+.explore-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.explore-right img{
+
+    width:100%;
+
+    max-width:550px;
+
+    animation:floatImage 5s ease-in-out infinite;
+
+}
+
+.explore-tag{
+
+    display:inline-block;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.explore-left h1{
+
+    font-size:54px;
+
+    color:#0f172a;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.explore-left p{
+
+    color:#64748b;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+/* ==========================================================
+   SEARCH
+========================================================== */
+
+.search-box{
+
+    width:100%;
+
+    max-width:650px;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:18px 22px;
+
+    border-radius:14px;
+
+    border:2px solid #dbeafe;
+
+    outline:none;
+
+    font-size:17px;
+
+    transition:.3s;
+
+    background:#fff;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+
+}
+
+.search-box input:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 15px 35px rgba(37,99,235,.15);
+
+}
+
+/* ==========================================================
+   FLOAT IMAGE
+========================================================== */
+
+@keyframes floatImage{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+/* ==========================================================
+   FILTERS
+========================================================== */
+
+.filters-section{
+
+    margin-top:-45px;
+
+    position:relative;
+
+    z-index:10;
+
+    margin-bottom:70px;
+
+}
+
+.filters{
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr 1fr 1fr;
+
+    gap:20px;
+
+    align-items:center;
+
+}
+
+.filters select{
+
+    width:100%;
+
+    padding:16px 18px;
+
+    border:1px solid #dbe4f0;
+
+    border-radius:12px;
+
+    background:#fff;
+
+    font-size:15px;
+
+    color:#334155;
+
+    outline:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.filters select:hover{
+
+    border-color:#2563eb;
+
+}
+
+.filters select:focus{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.12);
+
+}
+
+.filters option{
+
+    padding:10px;
+
+}
+
+/* ==========================================================
+   FILTER LABELS
+========================================================== */
+
+.filter-title{
+
+    font-size:14px;
+
+    color:#64748b;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.filter-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/* ==========================================================
+   FILTER CARD ANIMATION
+========================================================== */
+
+.filters{
+
+    transition:.35s;
+
+}
+
+.filters:hover{
+
+    box-shadow:0 20px 50px rgba(0,0,0,.10);
+
+}
+
+/* ==========================================================
+   SECTION SPACING
+========================================================== */
+
+.explore-books{
+
+    padding:20px 0 80px;
+
+}
+/* ==========================================================
+   BOOKS SECTION
+========================================================== */
+
+.explore-books{
+
+    padding:30px 0 90px;
+
+}
+
+.explore-books .section-title{
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+}
+
+.explore-books .section-title h2{
+
+    font-size:40px;
+
+    color:#0f172a;
+
+    margin-bottom:15px;
+
+}
+
+.explore-books .section-title p{
+
+    color:#64748b;
+
+    font-size:17px;
+
+}
+
+/* ==========================================================
+   LOADING
+========================================================== */
+
+.loading{
+
+    width:100%;
+
+    padding:90px 0;
+
+    text-align:center;
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:#2563eb;
+
+}
+
+/* ==========================================================
+   NO BOOKS FOUND
+========================================================== */
+
+.no-books{
+
+    max-width:700px;
+
+    margin:70px auto;
+
+    padding:60px;
+
+    background:#ffffff;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.06);
+
+}
+
+.no-books h2{
+
+    color:#0f172a;
+
+    font-size:34px;
+
+    margin-bottom:15px;
+
+}
+
+.no-books p{
+
+    color:#64748b;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   SMALL ANIMATIONS
+========================================================== */
+
+.no-books,
+.loading{
+
+    animation:fadeUp .6s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   SPACE AFTER BOOKS
+========================================================== */
+
+.explore-books{
+
+    margin-bottom:20px;
+
+}
+/* ==========================================================
+   PAGINATION
+========================================================== */
+
+.pagination-section{
+
+    padding:20px 0 80px;
+
+}
+
+.pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.pagination button{
+
+    padding:14px 28px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#2563eb;
+
+    color:#ffffff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.pagination button:hover:not(:disabled){
+
+    background:#1d4ed8;
+
+    transform:translateY(-3px);
+
+}
+
+.pagination button:disabled{
+
+    background:#cbd5e1;
+
+    cursor:not-allowed;
+
+}
+
+.pagination span{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#334155;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1100px){
+
+    .explore-hero .explore-container{
+
+        flex-direction:column-reverse;
+
+        text-align:center;
+
+    }
+
+    .explore-left h1{
+
+        font-size:44px;
+
+    }
+
+    .search-box{
+
+        margin:auto;
+
+    }
+
+}
+
+@media (max-width:900px){
+
+    .filters{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .explore-hero{
+
+        padding:70px 0;
+
+    }
+
+    .explore-left h1{
+
+        font-size:36px;
+
+    }
+
+    .explore-left p{
+
+        font-size:16px;
+
+    }
+
+    .filters{
+
+        grid-template-columns:1fr;
+
+        padding:25px;
+
+    }
+
+    .pagination{
+
+        flex-direction:column;
+
+        gap:15px;
+
+    }
+
+    .pagination button{
+
+        width:220px;
+
+    }
+
+}
+
+@media (max-width:500px){
+
+    .explore-container{
+
+        width:92%;
+
+    }
+
+    .explore-left h1{
+
+        font-size:30px;
+
+    }
+
+    .explore-right img{
+
+        max-width:320px;
+
+    }
+
+    .search-box input{
+
+        padding:16px;
+
+        font-size:15px;
+
+    }
+
+    .filters{
+
+        border-radius:16px;
+
+    }
+
+}

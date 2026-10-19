@@ -1,0 +1,39 @@
+.warehouse-catalogue-card{
+  border:1px solid #e5e7eb;
+  background:white;
+  border-radius:14px;
+  overflow:hidden;
+}
+
+.warehouse-catalogue-card-img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  background:#f9fafb;
+}
+
+.warehouse-catalogue-card-img.placeholder{
+  border:1px dashed #d1d5db;
+}
+
+.warehouse-catalogue-card-body{
+  padding:12px;
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.warehouse-catalogue-card-title{
+  font-weight:800;
+}
+
+.warehouse-catalogue-card-author{
+  color:#6b7280;
+}
+
+.warehouse-catalogue-card-meta{
+  color:#374151;
+  font-size:13px;
+  font-weight:700;
+}
+

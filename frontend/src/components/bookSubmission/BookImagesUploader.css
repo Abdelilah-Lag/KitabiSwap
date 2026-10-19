@@ -1,0 +1,514 @@
+/* ==========================================================
+   BOOK IMAGES UPLOADER
+   KitabiSwap Premium UI
+========================================================== */
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.submission-section{
+
+    width:100%;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:22px;
+
+    padding:32px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:28px;
+
+    box-shadow:0 8px 24px rgba(15,23,42,.05);
+
+    transition:.25s;
+
+}
+
+.submission-section:hover{
+
+    box-shadow:0 14px 36px rgba(15,23,42,.08);
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.section-header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.section-header h2{
+
+    margin:0;
+
+    font-size:1.55rem;
+
+    font-weight:700;
+
+    color:#0F172A;
+
+}
+
+.section-header p{
+
+    margin:0;
+
+    color:#64748B;
+
+    line-height:1.7;
+
+    font-size:.95rem;
+
+}
+
+/* ==========================================================
+   UPLOAD AREA
+========================================================== */
+
+.upload-area{
+
+    width:100%;
+
+    min-height:240px;
+
+    border:2px dashed #CBD5E1;
+
+    border-radius:20px;
+
+    background:#F8FAFC;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.upload-area:hover{
+
+    border-color:#2563EB;
+
+    background:#EFF6FF;
+
+    transform:translateY(-3px);
+
+}
+
+.upload-icon{
+
+    font-size:4rem;
+
+    color:#2563EB;
+
+}
+
+.upload-area h3{
+
+    margin:0;
+
+    font-size:1.3rem;
+
+    color:#0F172A;
+
+}
+
+.upload-area p{
+
+    margin:0;
+
+    color:#64748B;
+
+    font-size:.95rem;
+
+}
+
+/* ==========================================================
+   IMAGES HEADER
+========================================================== */
+
+.images-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 20px;
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:16px;
+
+}
+
+.images-count{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#2563EB;
+
+    font-weight:700;
+
+}
+
+.images-header small{
+
+    color:#64748B;
+
+}
+
+/* ==========================================================
+   GRID
+========================================================== */
+
+.images-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+
+    gap:22px;
+
+}
+
+/* ==========================================================
+   IMAGE CARD
+========================================================== */
+
+.image-card{
+
+    position:relative;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    box-shadow:0 6px 18px rgba(15,23,42,.05);
+
+    transition:.3s;
+
+}
+
+.image-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 18px 36px rgba(15,23,42,.12);
+
+}
+
+.image-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+/* ==========================================================
+   IMAGE NUMBER
+========================================================== */
+
+.image-index{
+
+    position:absolute;
+
+    top:12px;
+
+    left:12px;
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    width:34px;
+
+    height:34px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-weight:700;
+
+    font-size:.9rem;
+
+}
+
+/* ==========================================================
+   DELETE BUTTON
+========================================================== */
+
+.delete-image{
+
+    position:absolute;
+
+    top:12px;
+
+    right:12px;
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#EF4444;
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    transition:.25s;
+
+}
+
+.delete-image:hover{
+
+    background:#DC2626;
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================================
+   EMPTY STATE
+========================================================== */
+
+.images-empty{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:18px;
+
+    padding:60px 20px;
+
+    border:2px dashed #CBD5E1;
+
+    border-radius:18px;
+
+    background:#F8FAFC;
+
+}
+
+.images-empty svg{
+
+    font-size:4rem;
+
+    color:#CBD5E1;
+
+}
+
+.images-empty h4{
+
+    margin:0;
+
+    color:#334155;
+
+    font-size:1.3rem;
+
+}
+
+.images-empty p{
+
+    margin:0;
+
+    color:#64748B;
+
+    max-width:420px;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   HELP
+========================================================== */
+
+.upload-help{
+
+    background:#F8FAFC;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:18px;
+
+    padding:22px;
+
+}
+
+.upload-help ul{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:14px;
+
+}
+
+.upload-help li{
+
+    color:#475569;
+
+    font-size:.95rem;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:992px){
+
+    .images-grid{
+
+        grid-template-columns:repeat(auto-fill,minmax(160px,1fr));
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .submission-section{
+
+        padding:24px;
+
+    }
+
+    .section-header h2{
+
+        font-size:1.35rem;
+
+    }
+
+    .images-header{
+
+        flex-direction:column;
+
+        gap:12px;
+
+        text-align:center;
+
+    }
+
+    .upload-area{
+
+        min-height:200px;
+
+        padding:30px;
+
+    }
+
+    .upload-icon{
+
+        font-size:3.5rem;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    .submission-section{
+
+        padding:20px;
+
+    }
+
+    .images-grid{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:14px;
+
+    }
+
+    .image-card img{
+
+        height:160px;
+
+    }
+
+    .upload-help ul{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

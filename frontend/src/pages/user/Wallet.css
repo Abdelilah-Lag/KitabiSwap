@@ -1,0 +1,408 @@
+/* ==========================================================
+   WALLET PAGE
+========================================================== */
+
+.wallet-page{
+
+    min-height:100vh;
+
+    padding:130px 0 80px;
+
+    background:
+        linear-gradient(180deg,#F8FAFC 0%,#FFFFFF 100%);
+
+}
+
+.wallet-container{
+
+    width:92%;
+
+    max-width:1450px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.wallet-header{
+
+    margin-bottom:40px;
+
+}
+
+.wallet-header h1{
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:14px;
+
+}
+
+.wallet-header p{
+
+    max-width:750px;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:#64748B;
+
+}
+
+/* ==========================================================
+   BALANCE CARD
+========================================================== */
+
+.wallet-balance-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:50px;
+
+    padding:38px 45px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(135deg,#0F766E 0%,#115E59 100%);
+
+    color:#FFFFFF;
+
+    box-shadow:
+        0 22px 50px rgba(15,118,110,.28);
+
+}
+
+.wallet-balance-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+
+    height:280px;
+
+    right:-80px;
+
+    top:-90px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.wallet-balance-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:170px;
+
+    height:170px;
+
+    left:-60px;
+
+    bottom:-60px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.wallet-balance-card span{
+
+    display:block;
+
+    position:relative;
+
+    z-index:2;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    opacity:.95;
+
+    margin-bottom:10px;
+
+    letter-spacing:.4px;
+
+}
+
+.wallet-balance-card h2{
+
+    position:relative;
+
+    z-index:2;
+
+    font-size:52px;
+
+    font-weight:800;
+
+    letter-spacing:1px;
+
+}
+
+/* ==========================================================
+   SECTION
+========================================================== */
+
+.wallet-section{
+
+    margin-bottom:45px;
+
+    padding:38px;
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:28px;
+
+    box-shadow:
+        0 10px 35px rgba(15,23,42,.06);
+
+    transition:.35s;
+
+}
+
+.wallet-section:hover{
+
+    box-shadow:
+        0 18px 45px rgba(15,23,42,.10);
+
+}
+
+.section-title{
+
+    margin-bottom:30px;
+
+}
+
+.section-title h2{
+
+    font-size:30px;
+
+    font-weight:800;
+
+    color:#0F172A;
+
+    margin-bottom:10px;
+
+}
+
+.section-title p{
+
+    color:#64748B;
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   PAYMENT GRID
+========================================================== */
+
+.payment-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(320px,1fr));
+
+    gap:28px;
+
+}
+
+/* ==========================================================
+   LOADING
+========================================================== */
+
+.wallet-loading{
+
+    min-height:70vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    font-weight:800;
+
+    color:#0F766E;
+
+}
+
+/* ==========================================================
+   EMPTY
+========================================================== */
+
+.wallet-empty{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:220px;
+
+    border:2px dashed #CBD5E1;
+
+    border-radius:22px;
+
+    background:#F8FAFC;
+
+    color:#94A3B8;
+
+    font-size:22px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:1100px){
+
+.wallet-balance-card{
+
+padding:32px;
+
+}
+
+.wallet-balance-card h2{
+
+font-size:44px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.wallet-page{
+
+padding:115px 0 60px;
+
+}
+
+.wallet-container{
+
+width:94%;
+
+}
+
+.wallet-header h1{
+
+font-size:34px;
+
+}
+
+.wallet-header p{
+
+font-size:16px;
+
+}
+
+.wallet-section{
+
+padding:24px;
+
+border-radius:22px;
+
+}
+
+.section-title h2{
+
+font-size:24px;
+
+}
+
+.payment-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.wallet-balance-card{
+
+padding:26px;
+
+border-radius:22px;
+
+}
+
+.wallet-balance-card h2{
+
+font-size:36px;
+
+}
+
+}
+
+@media(max-width:500px){
+
+.wallet-header h1{
+
+font-size:30px;
+
+}
+
+.wallet-balance-card{
+
+padding:22px;
+
+}
+
+.wallet-balance-card span{
+
+font-size:14px;
+
+}
+
+.wallet-balance-card h2{
+
+font-size:30px;
+
+}
+
+.section-title h2{
+
+font-size:22px;
+
+}
+
+.section-title p{
+
+font-size:15px;
+
+}
+
+}

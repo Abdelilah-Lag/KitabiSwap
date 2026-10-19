@@ -1,0 +1,153 @@
+.exchange-page{
+
+    min-height:100vh;
+
+    background:#F8FAFC;
+
+    padding:45px 0 70px;
+
+}
+
+.exchange-container{
+
+    width:92%;
+
+    max-width:1450px;
+
+    margin:auto;
+
+}
+
+.exchange-title{
+
+    margin-bottom:35px;
+
+}
+
+.exchange-title h1{
+
+    font-size:40px;
+
+    color:#0F172A;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+}
+
+.exchange-title p{
+
+    font-size:17px;
+
+    color:#64748B;
+
+    max-width:700px;
+
+    line-height:1.8;
+
+}
+
+.exchange-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fill,minmax(315px,1fr));
+
+    gap:30px;
+
+    margin-top:35px;
+
+}
+
+.exchange-loading{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:300px;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#0F766E;
+
+}
+
+.exchange-empty{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:80px;
+
+    text-align:center;
+
+    font-size:20px;
+
+    color:#64748B;
+
+    box-shadow:
+
+        0 8px 25px rgba(0,0,0,.06);
+
+    margin-top:40px;
+
+}
+
+@media(max-width:992px){
+
+.exchange-title h1{
+
+font-size:32px;
+
+}
+
+.exchange-grid{
+
+grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+
+}
+
+}
+
+@media(max-width:768px){
+
+.exchange-page{
+
+padding:30px 0;
+
+}
+
+.exchange-container{
+
+width:95%;
+
+}
+
+.exchange-title h1{
+
+font-size:28px;
+
+}
+
+.exchange-title p{
+
+font-size:15px;
+
+}
+
+.exchange-grid{
+
+grid-template-columns:1fr;
+
+gap:22px;
+
+}
+
+}

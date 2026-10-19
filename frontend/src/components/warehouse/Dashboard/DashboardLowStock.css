@@ -1,0 +1,189 @@
+.dashboard-stock-card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    border:1px solid #ececec;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+.dashboard-stock-header{
+
+    margin-bottom:20px;
+
+}
+
+.dashboard-stock-header h2{
+
+    font-size:22px;
+
+    color:#222;
+
+}
+
+.dashboard-stock-header p{
+
+    margin-top:5px;
+
+    color:#888;
+
+}
+
+.dashboard-stock-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.dashboard-stock-table thead{
+
+    background:#f8fafc;
+
+}
+
+.dashboard-stock-table th{
+
+    text-align:left;
+
+    padding:14px;
+
+    border-bottom:1px solid #e5e7eb;
+
+    color:#555;
+
+}
+
+.dashboard-stock-table td{
+
+    padding:16px 14px;
+
+    border-bottom:1px solid #f1f1f1;
+
+}
+
+.dashboard-stock-table tbody tr:hover{
+
+    background:#fafafa;
+
+}
+
+.dashboard-stock-book{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.dashboard-stock-book img{
+
+    width:55px;
+
+    height:75px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    border:1px solid #ddd;
+
+}
+
+.dashboard-stock-book div{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.dashboard-stock-book strong{
+
+    font-size:15px;
+
+    color:#222;
+
+}
+
+.dashboard-stock-book span{
+
+    color:#777;
+
+    font-size:13px;
+
+    margin-top:3px;
+
+}
+
+.stock-number{
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:#2563eb;
+
+}
+
+.stock-warning{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    background:#fef3c7;
+
+    color:#b45309;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.stock-danger{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    background:#fee2e2;
+
+    color:#dc2626;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.dashboard-stock-empty{
+
+    text-align:center;
+
+    padding:40px;
+
+    color:#999;
+
+}

@@ -1,0 +1,605 @@
+/* ==========================================================
+   PAGE
+========================================================== */
+
+.warehouse-user-books{
+
+    padding:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+    min-height:100%;
+
+    background:#f8fafc;
+
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.warehouse-user-books-header{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.warehouse-user-books-header h2{
+
+    margin:0;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#1f2937;
+
+}
+
+.warehouse-user-books-header p{
+
+    margin:0;
+
+    color:#6b7280;
+
+    font-size:15px;
+
+}
+
+/* ==========================================================
+   TOOLBAR
+========================================================== */
+
+.warehouse-user-books-toolbar{
+
+    display:flex;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    align-items:center;
+
+    background:#ffffff;
+
+    padding:18px;
+
+    border-radius:14px;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.05);
+
+}
+
+.warehouse-user-books-toolbar input{
+
+    flex:1;
+
+    min-width:260px;
+
+    padding:12px 15px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    outline:none;
+
+    transition:.2s;
+
+}
+
+.warehouse-user-books-toolbar input:focus{
+
+    border-color:#2563eb;
+
+}
+
+.warehouse-user-books-toolbar select{
+
+    padding:12px 15px;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    background:#fff;
+
+    cursor:pointer;
+
+    min-width:180px;
+
+}
+
+.warehouse-user-books-toolbar button{
+
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.warehouse-user-books-toolbar button:hover{
+
+    background:#1d4ed8;
+
+}
+
+/* ==========================================================
+   TABLE
+========================================================== */
+
+.warehouse-user-books-table-wrapper{
+
+    background:#fff;
+
+    border-radius:14px;
+
+    overflow:auto;
+
+    box-shadow:0 2px 12px rgba(0,0,0,.05);
+
+}
+
+.warehouse-user-books-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:1300px;
+
+}
+
+.warehouse-user-books-table thead{
+
+    background:#f3f4f6;
+
+}
+
+.warehouse-user-books-table th{
+
+    padding:16px;
+
+    text-align:left;
+
+    color:#374151;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+}
+
+.warehouse-user-books-table td{
+
+    padding:16px;
+
+    border-top:1px solid #e5e7eb;
+
+    vertical-align:middle;
+
+    color:#374151;
+
+    font-size:14px;
+
+}
+
+.warehouse-user-books-table tbody tr{
+
+    transition:.2s;
+
+}
+
+.warehouse-user-books-table tbody tr:hover{
+
+    background:#f9fafb;
+
+}
+
+/* ==========================================================
+   COVER
+========================================================== */
+
+.warehouse-user-books-cover{
+
+    width:70px;
+
+    height:100px;
+
+    object-fit:cover;
+
+    border-radius:8px;
+
+    border:1px solid #e5e7eb;
+
+}
+
+.warehouse-user-books-no-image{
+
+    width:70px;
+
+    height:100px;
+
+    border-radius:8px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#f3f4f6;
+
+    color:#9ca3af;
+
+    font-size:12px;
+
+    text-align:center;
+
+    padding:5px;
+
+}
+
+.warehouse-user-books-title{
+
+    font-weight:700;
+
+    color:#111827;
+
+    margin-bottom:5px;
+
+}
+
+.warehouse-user-books-isbn{
+
+    font-size:12px;
+
+    color:#6b7280;
+
+}
+
+/* ==========================================================
+   STATUS
+========================================================== */
+
+.warehouse-user-books-status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:6px 14px;
+
+    border-radius:30px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+.warehouse-user-books-status.available{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+}
+
+.warehouse-user-books-status.unavailable{
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+}
+
+/* ==========================================================
+   DELETE BUTTON
+========================================================== */
+
+.warehouse-user-books-delete{
+
+    border:none;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    background:#dc2626;
+
+    color:#fff;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.warehouse-user-books-delete:hover{
+
+    background:#b91c1c;
+
+}
+
+/* ==========================================================
+   PAGINATION
+========================================================== */
+
+.warehouse-user-books-pagination{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+.warehouse-user-books-pagination button{
+
+    border:none;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+.warehouse-user-books-pagination button:hover:not(:disabled){
+
+    background:#1d4ed8;
+
+}
+
+.warehouse-user-books-pagination button:disabled{
+
+    background:#cbd5e1;
+
+    cursor:not-allowed;
+
+}
+
+.warehouse-user-books-pagination span{
+
+    font-weight:600;
+
+    color:#374151;
+
+}
+
+.warehouse-user-books-pagination select{
+
+    padding:10px 12px;
+
+    border-radius:8px;
+
+    border:1px solid #d1d5db;
+
+    background:#fff;
+
+}
+
+/* ==========================================================
+   MODAL
+========================================================== */
+
+.warehouse-user-books-modal-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.45);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:9999;
+
+}
+
+.warehouse-user-books-modal{
+
+    width:420px;
+
+    max-width:95vw;
+
+    background:#fff;
+
+    border-radius:16px;
+
+    padding:28px;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.2);
+
+    animation:modalShow .25s ease;
+
+}
+
+@keyframes modalShow{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.warehouse-user-books-modal h3{
+
+    margin:0 0 18px;
+
+    color:#111827;
+
+    font-size:22px;
+
+}
+
+.warehouse-user-books-modal p{
+
+    margin:0;
+
+    line-height:1.7;
+
+    color:#4b5563;
+
+}
+
+.warehouse-user-books-modal strong{
+
+    color:#111827;
+
+}
+
+.warehouse-user-books-modal-actions{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+}
+
+.warehouse-user-books-confirm{
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    background:#dc2626;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.warehouse-user-books-confirm:hover{
+
+    background:#b91c1c;
+
+}
+
+.warehouse-user-books-cancel{
+
+    border:none;
+
+    padding:12px 22px;
+
+    border-radius:10px;
+
+    background:#e5e7eb;
+
+    color:#374151;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+.warehouse-user-books-cancel:hover{
+
+    background:#d1d5db;
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:900px){
+
+    .warehouse-user-books{
+
+        padding:18px;
+
+    }
+
+    .warehouse-user-books-toolbar{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .warehouse-user-books-toolbar input,
+
+    .warehouse-user-books-toolbar select,
+
+    .warehouse-user-books-toolbar button{
+
+        width:100%;
+
+    }
+
+    .warehouse-user-books-pagination{
+
+        justify-content:center;
+
+    }
+
+}
